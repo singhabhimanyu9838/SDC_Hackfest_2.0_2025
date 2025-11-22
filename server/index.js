@@ -23,7 +23,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 app.use(cors({
   origin: [
-    "https://sdc-hackfest-2-0-2025.onrender.com",  // your frontend
+    "https://sdc-hackfest-2-0-2025-fly8.onrender.com/",  // your frontend
     "http://localhost:5173"
   ],
   credentials: true,
