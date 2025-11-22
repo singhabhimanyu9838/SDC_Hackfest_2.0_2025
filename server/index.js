@@ -15,11 +15,21 @@ const PORT = process.env.PORT || 3000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
 // --- Middlewares ---
+// app.use(cors({
+//     origin: process.env.CLIENT_URL,
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//     allowedHeaders: ['Content-Type', 'Authorization'],
+// }));
+
 app.use(cors({
-    origin: process.env.CLIENT_URL,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-}));
+  origin: [
+    "https://sdc-hackfest-2-0-2025.onrender.com",  // your frontend
+    "http://localhost:5173"
+  ],
+  credentials: true,
+})
+);
+
 app.use(express.json());
 
 // --- Database Connection ---
