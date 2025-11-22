@@ -6,7 +6,6 @@ const cors = require('cors');
 // Ensure that other files like routes and services are required AFTER dotenv loads
 const authRoutes = require('./routes/auth');
 const teamsRoutes = require('./routes/teams');
-// const contactRoutes = require('./routes/contact');
 const registrationRoutes = require('./routes/registrations');
 
 
@@ -16,10 +15,11 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 // --- Middlewares ---
 
-// ✅ FIX: Removed trailing slash from frontend URL, added explicit methods and headers
+// CORS Configuration: Ensures preflight OPTIONS request is handled
 app.use(cors({
+  // The frontend URL confirmed from your environment settings
   origin: [
-    "https://sdc-hackfest-2-0-2025-fly8.onrender.com",  // <-- FIXED: No trailing slash
+    "https://sdc-hackfest-2-0-2025-fly8.onrender.com", 
     "http://localhost:5173"
   ],
   credentials: true,
@@ -30,16 +30,42 @@ app.use(cors({
 
 app.use(express.json());
 
+// --- Simple Health Check Route ---
+// Hitting this route will confirm Express is running and can access the database
+app.get('/health', async (req, res) => {
+    try {
+        // Check if Mongoose is connected (readyState 1 means connected)
+        const isConnected = mongoose.connection.readyState === 1;
+        const status = isConnected ? 'Connected' : 'Disconnected';
+        res.json({ 
+            service: 'Hackfest 2.0 Backend API',
+            status: 'Running',
+            database_status: status,
+            version: '1.0'
+        });
+    } catch (e) {
+        res.status(500).json({ status: 'error', message: e.message });
+    }
+});
+
+
 // --- Database Connection ---
 mongoose.connect(MONGODB_URI)
     .then(() => console.log('MongoDB Atlas Connected!'))
-    .catch(err => console.error('MongoDB connection error:', err));
+    .catch(err => {
+        console.error('MongoDB connection error:', err);
+    });
+
 
 // --- API Routes ---
 app.use('/api/auth', authRoutes);
 app.use('/api/teams', teamsRoutes); 
-// app.use('/api/contact', contactRoutes);
 app.use('/api/registrations', registrationRoutes); 
+
+// Fallback for root path (fixes "Cannot GET /" by providing a message)
+app.get('/', (req, res) => {
+    res.send('API Server is running. Use /api/registrations for registration.');
+});
 
 app.listen(PORT, () => {
       console.log(`Server running on http://localhost:${PORT}`);
