@@ -15,18 +15,8 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 // --- Middlewares ---
 
-// CORS Configuration: Ensures preflight OPTIONS request is handled
-app.use(cors({
-  // The frontend URL confirmed from your environment settings
-  origin: [
-    "https://sdc-hackfest-2-0-2025-fly8.onrender.com", 
-    "http://localhost:5173"
-  ],
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-})
-);
+// 🔥 NEW: WILDCARD CORS. USE THIS ONLY FOR TESTING TO RULE OUT CORS.
+app.use(cors()); // Allows ALL origins, methods, and headers by default
 
 app.use(express.json());
 
