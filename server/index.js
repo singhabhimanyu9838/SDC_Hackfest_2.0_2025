@@ -6,7 +6,7 @@ const cors = require('cors');
 // Ensure that other files like routes and services are required AFTER dotenv loads
 const authRoutes = require('./routes/auth');
 const teamsRoutes = require('./routes/teams');
-const contactRoutes = require('./routes/contact');
+// const contactRoutes = require('./routes/contact');
 const registrationRoutes = require('./routes/registrations');
 
 
@@ -30,7 +30,7 @@ mongoose.connect(MONGODB_URI)
 // --- API Routes ---
 app.use('/api/auth', authRoutes);
 app.use('/api/teams', teamsRoutes); 
-app.use('/api/contact', contactRoutes);
+// app.use('/api/contact', contactRoutes);
 app.use('/api/registrations', registrationRoutes); 
 
 app.listen(PORT, () => {

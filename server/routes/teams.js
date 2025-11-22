@@ -1,10 +1,10 @@
 // server/routes/teams.js - FINAL FUNCTIONAL CODE FOR LINK SUBMISSION
 
 const express = require('express');
-const Team = require('../models/Team');
+// const Team = require('../models/Team');
 const authMiddleware = require('../middleware/auth');
 // Removed: multer, path, fs as we are no longer handling file uploads
-const { sendRegistrationConfirmation } = require('../services/emailService'); 
+// const { sendRegistrationConfirmation } = require('../services/emailService'); 
 
 const router = express.Router();
 
