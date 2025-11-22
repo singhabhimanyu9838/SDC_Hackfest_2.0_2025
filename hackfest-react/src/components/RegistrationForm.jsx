@@ -3,7 +3,7 @@ import "./RegistrationForm.css";
 
 // Use environment variable if available (best practice for VITE projects)
 const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "https://sdc-hackfest-2-0-sever.onrender.com/api";
+  import.meta.env.VITE_API_BASE_URL || "https://sdc-hackfest-2-0-sever.onrender.com";
 
 
 const RegistrationForm = () => {
