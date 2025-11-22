@@ -1,0 +1,190 @@
+/* =========================================
+   ABOUT SECTION RESPONSIVE
+========================================= */
+
+/* ship image */
+.medium-ship {
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+@media (max-width: 992px) {
+  #about .col-lg-7,
+  #about .col-lg-5 {
+    text-align: center;
+  }
+
+  #about #about-div {
+    text-align: left;
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+/* About text spacing */
+#about p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
+  #about p {
+    font-size: 15px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  #about p {
+    font-size: 14px;
+  }
+}
+
+/* =========================================
+   STATS ICONS
+========================================= */
+.stat_icons {
+  margin-top: 2rem;
+  /* display: flex; */
+  justify-content: center;
+  width: 100%;
+}
+
+.stats-row {
+  justify-content: center !important;
+  text-align: center;
+}
+
+.stats {
+  margin-bottom: 20px;
+}
+
+.counting {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #45b6b6;
+  margin-top: 10px;
+}
+
+/* icons adjust for small screen */
+@media (max-width: 480px) {
+  .counting {
+    font-size: 1.5rem;
+  }
+  .stats h5 {
+    font-size: 14px;
+  }
+}
+/* ==========================
+   BACK TO TOP BUTTON
+========================== */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+
+  background: #45b6b6;
+  color: white;
+  border-radius: 50%;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
+  cursor: pointer;
+
+  transition: 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+#btn-back-to-top i {
+  font-size: 22px;
+}
+
+/* Hover animation — only for desktop */
+@media (hover: hover) {
+  #btn-back-to-top:hover {
+    transform: translateY(-6px) scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.45);
+  }
+}
+
+/* ==========================
+   RESPONSIVE STYLES
+========================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  #btn-back-to-top {
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    right: 25px;
+  }
+  #btn-back-to-top i {
+    font-size: 20px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 576px) {
+  #btn-back-to-top {
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+  }
+  #btn-back-to-top i {
+    font-size: 18px;
+  }
+}
+
+/* Extra small (very small mobiles) */
+@media (max-width: 400px) {
+  #btn-back-to-top {
+    width: 40px;
+    height: 40px;
+    bottom: 18px;
+    right: 18px;
+  }
+  #btn-back-to-top i {
+    font-size: 16px;
+  }
+}
+
+.lgx-social-footer li a {
+  font-size: 20px;
+  color: #45b6b6;
+  margin: 0 8px;
+  transition: 0.3s ease;
+}
+
+.lgx-social-footer li a:hover {
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff;
+  transform: scale(1.2);
+}
+
+/* Social icons high contrast */
+.lgx-social-footer li a {
+  font-size: 22px;
+  color: #45b6b6 !important;   /* teal visible */
+  margin: 0 10px;
+  transition: 0.3s ease;
+}
+
+/* Hover glow */
+.lgx-social-footer li a:hover {
+  color: #00eaff !important;   /* bright cyan */
+  text-shadow: 0 0 10px #00eaff;
+  transform: scale(1.2);
+}
+
+
+

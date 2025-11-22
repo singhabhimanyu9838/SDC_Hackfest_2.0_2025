@@ -1,0 +1,155 @@
+/* =========================================================
+    GRID: 4 cards → 2 cards → 1 card
+========================================================= */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  justify-items: center;
+  width: 100%;
+}
+
+/* Tablet (medium screen: 2 cards) */
+@media (max-width: 992px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+
+/* Mobile (small screen: 1 card) */
+@media (max-width: 576px) {
+  .team-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
+}
+
+/* =========================================================
+    CARD DESIGN
+========================================================= */
+.team-card {
+  background: #0d0f12;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 270px;
+  min-height: 390px;
+  text-align: center;
+  transition: 0.35s ease;
+  box-shadow: 0 0 12px rgba(68, 209, 255, 0.25);
+  transform-style: preserve-3d;
+}
+
+/* Responsive height control */
+@media (max-width: 576px) {
+  .team-card {
+    min-height: 350px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .team-card {
+    max-width: 90%;
+  }
+}
+
+/* =========================================================
+    HOVER EFFECTS (DESKTOP ONLY)
+========================================================= */
+@media (hover: hover) {
+  .team-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+  }
+
+  .tilt:hover {
+    transform: perspective(600px) rotateX(8deg) rotateY(-8deg);
+  }
+}
+
+/* MOBILE: disable 3D tilt (prevents shaking) */
+@media (max-width: 768px) {
+  .tilt:hover {
+    transform: none !important;
+  }
+}
+
+/* =========================================================
+    IMAGE (Fully responsive)
+========================================================= */
+.team-img {
+  width: 100%;
+  max-width: 240px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Mobile image sizing */
+@media (max-width: 576px) {
+  .team-img {
+    max-width: 200px;
+    height: 220px;
+  }
+}
+
+/* Tiny screens fix */
+@media (max-width: 400px) {
+  .team-img {
+    max-width: 180px;
+    height: 200px;
+  }
+}
+
+/* =========================================================
+    TEXT RESPONSIVE
+========================================================= */
+.team-card h2 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.team-card h5 {
+  color: #45b6b6;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+/* Mobile resize */
+@media (max-width: 576px) {
+  .team-card h2 {
+    font-size: 18px;
+  }
+  .team-card h5 {
+    font-size: 14px;
+  }
+}
+
+/* =========================================================
+    LINKEDIN ICON
+========================================================= */
+.linkedin-icon {
+  font-size: 32px;
+  color: #0e76a8;
+  transition: 0.3s;
+}
+
+/* Hover (desktop only) */
+@media (hover: hover) {
+  .linkedin-icon:hover {
+    color: #49d2ff;
+    transform: scale(1.2);
+  }
+}
+
+/* Mobile center alignment fix */
+@media (max-width: 400px) {
+  .linkedin-icon {
+    font-size: 28px;
+  }
+}

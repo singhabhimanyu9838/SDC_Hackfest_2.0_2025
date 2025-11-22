@@ -1,0 +1,51 @@
+/* Social icons high contrast */
+.lgx-social-footer li a {
+  font-size: 22px;
+  color: #45b6b6 !important;   /* teal visible */
+  margin: 0 10px;
+  transition: 0.3s ease;
+}
+
+/* Hover glow */
+.lgx-social-footer li a:hover {
+  color: #00eaff !important;   /* bright cyan */
+  text-shadow: 0 0 10px #00eaff;
+  transform: scale(1.2);
+}
+footer .storm-overlay {
+  display: none !important;
+}
+/* Force icons to be visible */
+.lgx-social-footer li a i {
+  font-size: 22px !important;
+  color: #45b6b6 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Hover Glow */
+.lgx-social-footer li a:hover i {
+  color: #00eaff !important;
+  text-shadow: 0 0 10px #00eaff;
+  transform: scale(1.3);
+}
+#lgx-footer {
+  position: relative;
+  z-index: 5;
+}
+
+.lgx-footer-single,
+.lgx-social-footer i,
+.footer-text-container {
+  position: relative;
+  z-index: 10 !important;
+}
+.footer-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1 !important;
+}
+

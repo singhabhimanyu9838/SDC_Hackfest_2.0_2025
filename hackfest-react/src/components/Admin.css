@@ -1,0 +1,145 @@
+.admin-storm-section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #020509, #03121e, #041e2c);
+  padding: 120px 20px;
+  color: #fff;
+}
+
+/* Same overlay as registration page */
+.storm-overlay {
+  position: absolute;
+  inset: 0;
+  background: url('/assets/img/new_assets/storm.gif');
+  opacity: 0.25;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+/* Login Box */
+.admin-login-box {
+  width: 450px;
+  margin: 0 auto;
+  background: rgba(0, 15, 20, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 200, 255, 0.4);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
+}
+
+/* Titles */
+.admin-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00eaff;
+}
+
+/* Form */
+.admin-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #0d6efd80;
+  border-radius: 8px;
+  background: #04151d;
+  color: #d7f8ff;
+  transition: 0.3s;
+}
+
+.admin-input:focus {
+  border-color: #00eaff;
+  box-shadow: 0 0 10px #00eaff;
+}
+
+/* Buttons */
+.admin-btn,
+.storm-btn.small {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.storm-btn.small {
+  width: auto;
+  padding: 8px 18px;
+}
+
+.storm-btn.small.danger {
+  background: #b30000;
+  border-color: #ff0000;
+}
+
+/* Dashboard */
+.admin-panel {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Table Box */
+.admin-table-box {
+  margin-top: 25px;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 10, 20, 0.6);
+  border: 1px solid #00eaff50;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px;
+  border: 1px solid #00eaff30;
+}
+
+.admin-table th {
+  background: rgba(0, 60, 90, 0.5);
+  text-shadow: 0 0 8px #00eaff;
+}
+
+.delete-btn {
+  background: transparent;
+  border: 1px solid red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: red;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: red;
+  color: white;
+}
+
+/* Back Button (same as registration) */
+.storm-back-btn {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #49d2ff;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(73, 210, 255, 0.4);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  backdrop-filter: blur(3px);
+  z-index: 10;
+}
+
+.storm-back-btn:hover {
+  color: #00eaff;
+  border-color: #00eaff;
+  transform: translateX(-4px);
+}

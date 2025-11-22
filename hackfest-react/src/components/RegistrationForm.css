@@ -1,0 +1,199 @@
+/* ===== Ocean Storm – Registration Section ===== */
+
+.storm-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 120px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #17253b 0, #05070d 45%, #000 100%);
+  overflow: hidden;
+}
+
+/* Background animation */
+.storm-overlay {
+  position: absolute;
+  inset: -30%;
+  background: radial-gradient(circle at 15% 20%, rgba(0, 255, 255, 0.15), transparent 55%),
+              radial-gradient(circle at 80% 0%, rgba(0, 150, 255, 0.2), transparent 55%),
+              radial-gradient(circle at 0% 100%, rgba(0, 150, 255, 0.25), transparent 55%);
+  animation: stormMove 18s linear infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes stormMove {
+  0% { transform: translate(-40px, 0) scale(1.05); }
+  50% { transform: translate(40px, -30px) scale(1.1); }
+  100% { transform: translate(-20px, 20px) scale(1.03); }
+}
+
+/* 70% of screen width */
+.reg-center {
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.storm-container {
+  width: 100%;
+  z-index: 2;
+}
+
+/* Title */
+.storm-title {
+  color: #e9f7ff;
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-shadow: 0 0 18px rgba(0, 255, 255, 0.45);
+}
+
+.storm-subtitle {
+  color: #b8c7dd;
+  font-size: 1.2rem;
+}
+
+.storm-subtitle span {
+  color: #48d1ff;
+  font-weight: 700;
+}
+
+/* Card */
+.storm-card {
+  width: 100%;
+  max-width: 100%;
+  padding: 40px 35px;
+  background: radial-gradient(circle at top, #182233 0, #05070d 60%, #000 100%);
+  border: 1px solid rgba(72, 209, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(72, 209, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.storm-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 45px rgba(72, 209, 255, 0.7);
+}
+
+/* Header */
+.storm-card-header h4 {
+  color: #fff;
+  font-size: 1.9rem;
+  margin-bottom: 6px;
+}
+
+.storm-card-header p {
+  color: #c6d7f2;
+  font-size: 1rem;
+}
+
+/* Inputs */
+.storm-field {
+  margin-bottom: 18px;
+}
+
+.storm-label {
+  color: #cfe8ff;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.storm-input {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  color: #e9f4ff;
+  background: rgba(3, 7, 15, 0.95);
+  border: 1px solid rgba(72, 209, 255, 0.6);
+  border-radius: 12px;
+  transition: 0.25s;
+}
+
+.storm-input:focus {
+  border-color: #48d1ff;
+  box-shadow: 0 0 14px rgba(72, 209, 255, 0.8);
+}
+
+/* Message */
+.storm-message {
+  padding: 12px;
+  border-left: 4px solid #48d1ff;
+  background: rgba(0, 255, 190, 0.12);
+  color: #def9ff;
+  border-radius: 8px;
+}
+
+/* Submit Button */
+.storm-btn {
+  width: 100%;
+  border: none;
+  background: transparent;
+}
+
+.storm-btn-inner {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #48d1ff, #00f5ff);
+  box-shadow: 0 0 20px rgba(72, 209, 255, 0.8);
+  color: #020308;
+}
+
+.storm-btn-inner:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 0 30px rgba(72, 209, 255, 0.9);
+}
+
+/* Bottom note */
+.storm-note {
+  margin-top: 15px;
+  text-align: center;
+  color: #9fb3ce;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reg-center {
+    width: 90vw;
+  }
+
+  .storm-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .storm-title {
+    font-size: 1.8rem;
+  }
+}
+/* Back Button */
+.storm-back-btn {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #49d2ff;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(73, 210, 255, 0.4);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  z-index: 10;
+  backdrop-filter: blur(3px);
+}
+
+.storm-back-btn:hover {
+  color: #00eaff;
+  border-color: #00eaff;
+  transform: translateX(-4px);
+  text-shadow: 0 0 8px #00eaff;
+}
+
