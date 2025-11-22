@@ -2,8 +2,11 @@
 import React, { useState } from "react";
 import "./Admin.css";
 
-const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
+// const API_BASE_URL =
+//   import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
+
+const API_BASE_URL = "https://sdc-hackfest-2-0-sever.onrender.com";
+
 
 const AdminLogin = () => {
   const [form, setForm] = useState({ email: "", password: "" });
