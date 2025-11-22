@@ -1,11 +1,22 @@
-# Render.yaml for SPA Rewrites (Place in the root of your frontend repo)
+# Render.yaml for SPA Rewrites and MIME Type Correction
 
 staticFiles:
   # Replace 'dist' with your actual build output directory (e.g., 'build' or 'out')
   # Assuming you are using Vite/Create React App, it is likely 'dist'
   rootDir: dist 
   
-  # Define rewrite rules
+  # Define rewrite rules for SPA handling (Frontend 404 fix)
   rewrites:
     - from: /*
       to: /index.html
+
+  # Define headers to fix the MIME Type errors for CSS
+  headers:
+    - path: /assets/**/*.css
+      headers:
+        - key: Content-Type
+          value: text/css
+    - path: /font.css
+      headers:
+        - key: Content-Type
+          value: text/css
