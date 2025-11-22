@@ -1,0 +1,11 @@
+# Render.yaml for SPA Rewrites (Place in the root of your frontend repo)
+
+staticFiles:
+  # Replace 'dist' with your actual build output directory (e.g., 'build' or 'out')
+  # Assuming you are using Vite/Create React App, it is likely 'dist'
+  rootDir: dist 
+  
+  # Define rewrite rules
+  rewrites:
+    - from: /*
+      to: /index.html
