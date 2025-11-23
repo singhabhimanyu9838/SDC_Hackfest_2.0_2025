@@ -41,7 +41,7 @@ const Footer = () => {
                       referrerPolicy="no-referrer-when-downgrade"
                     />
                     <p style={{ color: "#45b6b6" }}>
-                      <b>10-11 December 2025</b>
+                      <b>10th-11th December 2025</b>
                     </p>
                     <a
                       href="https://www.google.com/maps/place/Rajkiya+Engineering+College,+Banda"
