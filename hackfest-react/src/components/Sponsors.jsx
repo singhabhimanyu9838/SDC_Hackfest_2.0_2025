@@ -16,8 +16,8 @@ const Sponsors = () => {
 
   // ⭐ NEW Alumni Sponsors (Dummy)
   const alumniSponsors = [
+     { name: "Shekhar Mishra", role: "Alumni Sponsor", img: "/assets/img/sponsors/shekhar.jpg", linkedin: "https://www.linkedin.com/in/shekharmishraa/" },
     { name: "Abhinay Yadav", role: "Alumni Sponsor", img: "/assets/img/sponsors/abhinav.png", linkedin: "https://www.linkedin.com/in/abhinay01/" },
-    { name: "Shekhar Mishra", role: "Alumni Sponsor", img: "/assets/img/sponsors/shekhar.jpg", linkedin: "https://www.linkedin.com/in/shekharmishraa/" },
     { name: "Akansha Pal", role: "Alumni Sponsor", img: "/assets/img/sponsors/akansha.jpg", linkedin: "https://www.linkedin.com/in/akanksha-pal-0380a7227/" },
     { name: "Arpan Bhadoria", role: "Alumni Sponsor", img: "/assets/img/sponsors/arpan.jpg", linkedin: "https://www.linkedin.com/in/arpan-singh-bhadauria-271b55207/" },
     { name: "Himanshu sahu", role: "Alumni Sponsor", img: "/assets/img/sponsors/himanshu.jpg", linkedin: "https://www.linkedin.com/in/himanshu-sahu75/overlay/photo" },
