@@ -20,7 +20,7 @@ const Success = () => {
           <h4>📌 Important Instructions</h4>
           <ul>
             <li>Check your email regularly for event updates.</li>
-            <li>Join our Discord server for announcements.</li>
+            <li>Connect with our social media handles for announcements.</li>
             <li>Keep your registered phone number available for verification.</li>
             <li>Be on time for the event — scheduling details will be shared soon.</li>
           </ul>

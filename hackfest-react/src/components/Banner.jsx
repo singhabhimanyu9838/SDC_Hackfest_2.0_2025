@@ -23,7 +23,7 @@ const Banner = () => {
 
           <p style={{ textAlign: "center", marginTop: "30px" }}>
             <img
-              src="/assets/img/new_assets/date1.png"
+              src="/assets/img/new_assets/bannner_date.png"
               alt="9th-10th December"
               width="400"
               height="80"
@@ -39,7 +39,7 @@ const Banner = () => {
           >
             <button className="button-register banner-button-style">
               <i className="fa-solid fa-up-right-from-square" />
-              &nbsp;Apply with Devfolio
+              &nbsp;Apply for Hackathon
             </button>
           </a>
           <a
@@ -52,7 +52,7 @@ const Banner = () => {
   onClick={() => (window.location.href = "/register")}
 >
   <i className="fa-brands fa-discord" />
-  &nbsp;Register
+  &nbsp;Codeathon
 </button>
 
 

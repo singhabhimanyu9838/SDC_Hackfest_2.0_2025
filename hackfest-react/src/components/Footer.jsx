@@ -14,7 +14,7 @@ const Footer = () => {
                   <div className="lgx-footer-single" style={{ textAlign: "center" }}>
                     <a href="#home-section" className="lgx-scroll">
                       <img
-                        src="/assets/img/hackfest11.png"
+                        src="/assets/img/new_assets/ship.png"
                         width="300"
                         alt="Logo"
                         loading="lazy"
@@ -56,7 +56,7 @@ const Footer = () => {
                   <div className="lgx-footer-single">
                     <h3 className="footer-title">Resources</h3>
                     <a
-                      href="/assets/docs/hackCBS_proposal_7.pdf"
+                      href=""
                       target="_blank"
                       rel="noreferrer"
                       className="resource_color"
@@ -66,7 +66,7 @@ const Footer = () => {
 
                     <h3 className="footer-title">Archives</h3>
                     <a
-                      href="https://v2.hackcbs.tech11"
+                      href=" "
                       target="_blank"
                       rel="noreferrer"
                       className="resource_color"
@@ -80,12 +80,12 @@ const Footer = () => {
                   <div className="lgx-footer-single">
                     <h3 className="footer-title">Community</h3>
                     <a
-                      href="http://bit.ly/hackcbs_discord"
+                      href="https://www.linkedin.com/company/student-developer-club-rec-banda/"
                       target="_blank"
                       rel="noreferrer"
                       className="resource_color"
                     >
-                      <i className="fab fa-discord" /> Discord
+                      <i className="fab fa-linkedin-in" /> Linkedln
                     </a>
                     <br />
                     <a
@@ -124,7 +124,7 @@ const Footer = () => {
 
       {/* Twitter / X */}
       <li>
-        <a href="https://www.twitter.com/hackcbs1/" target="_blank" rel="noreferrer">
+        <a href="https://x.com/SDC_RECB" target="_blank" rel="noreferrer">
           <i className="fab fa-twitter" />
         </a>
       </li>
@@ -138,7 +138,7 @@ const Footer = () => {
 
       {/* LinkedIn */}
       <li>
-        <a href="https://www.linkedin.com/company/student-developer-club-rec-banda/posts/?feedView=all" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/company/student-developer-club-rec-banda/" target="_blank" rel="noreferrer">
           <i className="fab fa-linkedin-in" />
         </a>
       </li>

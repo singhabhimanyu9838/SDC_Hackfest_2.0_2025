@@ -75,7 +75,7 @@ const RegistrationForm = () => {
 
       <div className="container storm-container">
         <div className="section_title text-center" data-aos="fade-down">
-          <h3 className="storm-title">Hackfest 2.0 Registration</h3>
+          <h3 className="storm-title">Hackfest 2.0 <span>Codeathon</span> Registration</h3>
           <p className="storm-subtitle">
             Brave the <span>Ocean Storm</span> and secure your place on deck.
           </p>
@@ -110,7 +110,7 @@ const RegistrationForm = () => {
               </div>
 
               <div className="storm-field">
-                <label className="storm-label">Email</label>
+                <label className="storm-label">College Email</label>
                 <input
                   type="email"
                   name="email"

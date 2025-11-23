@@ -1,123 +1,95 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+  const [shrink, setShrink] = useState(false);
 
-  const handleNavClick = (e, id) => {
-    e.preventDefault();
-    const el = document.querySelector(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
-    setOpen(false);
+  const sections = [
+    "about",
+    "themes",
+    "prizes",
+    "schedule",
+    "sponsors",
+    "teams",
+    "faq",
+    "contact",
+  ];
+
+  // Scroll Spy + Shrink navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) setShrink(true);
+      else setShrink(false);
+
+      let current = "";
+      sections.forEach((sec) => {
+        const el = document.getElementById(sec);
+        if (el) {
+          const top = el.offsetTop - 120;
+          const bottom = top + el.clientHeight;
+          if (window.scrollY >= top && window.scrollY < bottom) {
+            current = sec;
+          }
+        }
+      });
+      setActiveSection(current);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+    setMobileOpen(false);
   };
 
   return (
-    <header>
-      <div id="lgx-header" className="lgx-header">
-        <div className="lgx-header-position lgx-header-position-white lgx-header-position-fixed">
-          <div className="lgx-container-fluid">
-            <nav className="navbar navbar-default lgx-navbar">
-              <div className="navbar-header">
-                <button
-                  type="button"
-                  className="navbar-toggle collapsed"
-                  onClick={() => setOpen(!open)}
-                >
-                  <span className="sr-only">Toggle navigation</span>
-                  <span className="icon-bar" />
-                  <span className="icon-bar" />
-                  <span className="icon-bar" />
-                </button>
-                <div className="lgx-logo">
-                  <a
-                    href="#home-section"
-                    onClick={(e) => handleNavClick(e, "#home-section")}
-                  >
-                    <img
-                      src="/assets/img/logo.png"
-                      id="top-logo-img"
-                      alt="Hackfest Logo"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div
-                id="navbar"
-                className={`navbar-collapse lgx-3 ${
-                  open ? "in" : "collapse"
-                }`}
-              >
-                <ul className="nav navbar-nav mr-auto lgx-nav mt-3">
-                  <li className="nav-item">
-                    <a
-                      href="#about"
-                      onClick={(e) => handleNavClick(e, "#about")}
-                    >
-                      About
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      href="#themes"
-                      onClick={(e) => handleNavClick(e, "#themes")}
-                    >
-                      Themes
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      href="#prizes"
-                      onClick={(e) => handleNavClick(e, "#prizes")}
-                    >
-                      Prizes
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      href="#schedule"
-                      onClick={(e) => handleNavClick(e, "#schedule")}
-                    >
-                      Schedule
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      href="#sponsors"
-                      onClick={(e) => handleNavClick(e, "#sponsors")}
-                    >
-                      Sponsors
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      href="#teams"
-                      onClick={(e) => handleNavClick(e, "#teams")}
-                    >
-                      Team
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="#faq" onClick={(e) => handleNavClick(e, "#faq")}>
-                      FAQ&apos;s
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      href="#contact"
-                      onClick={(e) => handleNavClick(e, "#contact")}
-                    >
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
+    <nav className={`glass-navbar ${shrink ? "shrink" : ""}`}>
+      {/* LOGO */}
+      <div className="logo-container">
+        <img src="/assets/img/logo.png" alt="logo" className="navbar-logo" />
       </div>
-    </header>
+
+      {/* Desktop Nav */}
+      <ul className="nav-links">
+        {sections.map((sec) => (
+          <li key={sec}>
+            <a
+              onClick={() => scrollTo(sec)}
+              className={activeSection === sec ? "active-nav" : ""}
+            >
+              {sec.charAt(0).toUpperCase() + sec.slice(1)}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      {/* Mobile Menu Button */}
+      <button
+        className="mobile-btn"
+        onClick={() => setMobileOpen(!mobileOpen)}
+      >
+        <i className="fas fa-bars"></i>
+      </button>
+
+      {/* Mobile Menu */}
+      <ul className={`mobile-menu ${mobileOpen ? "open" : ""}`}>
+        {sections.map((sec) => (
+          <li key={sec}>
+            <a
+              onClick={() => scrollTo(sec)}
+              className={activeSection === sec ? "active-nav" : ""}
+            >
+              {sec.charAt(0).toUpperCase() + sec.slice(1)}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 

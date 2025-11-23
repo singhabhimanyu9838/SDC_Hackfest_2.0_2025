@@ -78,7 +78,7 @@ const About = () => {
                 colors="primary:#45b6b6,secondary:#45b6b6"
                 style={{ width: "80px", height: "80px" }}
               />
-              <div className="counting">125+</div>
+              <div className="counting">325+</div>
               <h5 className="clr-dark">Attendees</h5>
             </div>
 

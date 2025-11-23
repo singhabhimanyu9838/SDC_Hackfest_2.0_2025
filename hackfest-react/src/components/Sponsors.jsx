@@ -1,7 +1,15 @@
-// src/components/Sponsors.jsx
 import React from "react";
-
+import "./Sponsers.css"
 const Sponsors = () => {
+  const sponsors = [
+    "/assets/img/sponsors/spon1.jpg",
+    "/assets/img/sponsors/spon2.jpg",
+    "/assets/img/sponsors/spon3.jpg",
+    "/assets/img/sponsors/spon4.jpg",
+    "/assets/img/sponsors/spon5.jpg",
+    "/assets/img/sponsors/spon6.jpg",
+  ];
+
   return (
     <section className="pt100 pb100" id="sponsors">
       <div className="container">
@@ -10,13 +18,17 @@ const Sponsors = () => {
             className="title-dark"
             data-aos="fade-right"
             data-aos-duration="1000"
-            data-aos-anchor-placement="top-bottom"
           >
             Our Sponsors
           </h3>
         </div>
-        <div className="text-center" style={{ color: "#fff", marginTop: 40 }}>
-          <p>Sponsors will be announced soon. Stay tuned!</p>
+
+        <div className="sponsor-grid">
+          {sponsors.map((src, i) => (
+            <div className="sponsor-card" key={i}>
+              <img src={src} alt={`Sponsor ${i + 1}`} />
+            </div>
+          ))}
         </div>
 
         <div className="text-center" style={{ marginTop: 24 }}>

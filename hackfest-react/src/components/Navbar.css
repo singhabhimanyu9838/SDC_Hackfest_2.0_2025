@@ -1,0 +1,179 @@
+/* =========================================================
+    GLOBAL FIXES → Prevent Shifting Left
+========================================================= */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================================
+    ACTIVE LINK STYLE
+========================================================= */
+.active-nav {
+  color: #45b6b6 !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.active-nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 100%;
+  background: #45b6b6;
+  box-shadow: 0 0 10px #45b6b6;
+  animation: underlineAnim 0.3s ease forwards;
+}
+
+@keyframes underlineAnim {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* =========================================================
+    GLASS NAVBAR
+========================================================= */
+.glass-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  background: rgba(10, 15, 25, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 25px rgba(0, 255, 255, 0.12);
+  z-index: 10000;
+  transition: 0.35s ease;
+  box-sizing: border-box;
+}
+
+/* Shrink Effect */
+.glass-navbar.shrink {
+  padding: 8px 40px;
+  backdrop-filter: blur(20px);
+  background: rgba(10, 15, 25, 0.7);
+}
+
+/* Responsive Navbar Padding (Fixes Left Shift) */
+@media (max-width: 768px) {
+  .glass-navbar {
+    padding: 14px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .glass-navbar {
+    padding: 12px 15px;
+  }
+}
+
+/* =========================================================
+    LOGO RULES
+========================================================= */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================================================
+    DESKTOP NAV LINKS
+========================================================= */
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #45b6b6;
+  text-shadow: 0 0 8px #45b6b6;
+}
+
+/* =========================================================
+    MOBILE MENU
+========================================================= */
+.mobile-btn {
+  display: none;
+  font-size: 28px;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* TABLET & MOBILE */
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 83px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(10, 15, 25, 0.95);
+    text-align: center;
+    transform: translateY(-500px); /* Slide-in start */
+    transition: 0.4s ease;
+    overflow-x: hidden;
+  }
+
+  .mobile-menu.open {
+    transform: translateY(0); /* Slide down */
+  }
+
+  .mobile-menu li {
+    padding: 10px 0;
+    list-style: none;
+  }
+
+  .mobile-menu li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .mobile-menu li a {
+    font-size: 17px;
+  }
+}

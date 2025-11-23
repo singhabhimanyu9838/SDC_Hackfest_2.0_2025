@@ -153,3 +153,55 @@
     font-size: 28px;
   }
 }
+/* Faculty Section Custom Width */
+.faculty-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Make faculty card wider */
+.faculty-card {
+  max-width: 360px !important;  /* Larger card */
+  width: 100%;
+}
+
+/* Responsive for mobile */
+@media (max-width: 576px) {
+  .faculty-card {
+    max-width: 90% !important;
+  }
+}
+
+/* =========================================================
+    LINKEDIN ICON
+========================================================= *//* LINKEDIN ICON BASE */
+.linkedin-wrap {
+  display: inline-block;
+}
+
+.linkedin-icon {
+  font-size: 32px;
+  color: #0e76a8;
+  transition: 0.3s ease;
+}
+
+/* DESKTOP HOVER: smooth glow + scale */
+@media (hover: hover) {
+  .linkedin-wrap:hover .linkedin-icon {
+    color: #49d2ff;
+    transform: scale(1.22) translateY(-3px);
+    text-shadow: 0 0 8px #49d2ff, 0 0 15px #49d2ff;
+  }
+}
+
+/* Mobile size fix */
+@media (max-width: 400px) {
+  .linkedin-icon {
+    font-size: 28px;
+  }
+}
+
+

@@ -1,0 +1,72 @@
+/* ===== BASE SECTION ===== */
+#glimpses-new {
+  padding: 80px 0;
+}
+
+.glimpses-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ===== EACH ROW ===== */
+.glimpses-row {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 35px 0;
+  position: relative;
+}
+
+/* ===== TRACK WITH IMAGES (gets duplicated) ===== */
+.glimpses-track {
+  display: inline-flex;
+  gap: 22px;
+  animation: scroll 20s linear infinite;
+}
+
+.glimpses-row.right .glimpses-track {
+  animation-direction: reverse;
+}
+
+/* ===== IMAGE STYLING ===== */
+.glimpses-track img {
+  width: 340px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  flex-shrink: 0;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.45);
+}
+
+/* ===== INFINITE SMOOTH LOOP ===== */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .glimpses-track img {
+    width: 260px;
+    height: 170px;
+  }
+}
+
+@media (max-width: 576px) {
+  .glimpses-track img {
+    width: 200px;
+    height: 130px;
+  }
+}
+.section_title {
+  /* text-align: center; */
+  margin-bottom: 40px;
+}
+.section_title h3 {
+  width: 100%;
+  display: inline-block;
+}
