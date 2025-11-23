@@ -43,7 +43,7 @@ const Banner = () => {
             </button>
           </a>
           <a
-            href="https://discord.gg/AfVYrSemzB"
+            href=""
             target="_blank"
             rel="noreferrer"
           >
