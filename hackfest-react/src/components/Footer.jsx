@@ -180,7 +180,7 @@ const Footer = () => {
 
       {/* Website / Globe */}
       <li>
-        <a href="https://recbanda.ac.in/" target="_blank" rel="noreferrer">
+        <a href="https://sdc-recb1.netlify.app/" target="_blank" rel="noreferrer">
           <i className="fas fa-globe" />
         </a>
       </li>
