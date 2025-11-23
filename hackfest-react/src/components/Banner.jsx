@@ -35,7 +35,7 @@ const Banner = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://hackcbs-7.devfolio.co/"
+            href=""
           >
             <button className="button-register banner-button-style">
               <i className="fa-solid fa-up-right-from-square" />

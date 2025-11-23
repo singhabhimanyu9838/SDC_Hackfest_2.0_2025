@@ -56,6 +56,12 @@ const mentors = [
     linkedin: "https://www.linkedin.com/in/jiwanshu-%E2%80%8E-9b848725a/",
   },
   {
+    name: "Aditya Singh",
+    role: "Web Developer Head",
+    img: "/assets/img/team/aditya.jpg",
+    linkedin: "https://www.linkedin.com/in/aditya-singh-03bb48257/",
+  },
+  {
     name: "Nihal Jaiswal",
     role: "Machine Learning Head",
     img: "/assets/img/team/nihal.jpg",
@@ -91,12 +97,7 @@ const mentors = [
     img: "/assets/img/team/Hrishabh.jpg",
     linkedin: "https://www.linkedin.com/in/hrishabh-gupta-50442821a/",
   },
-  {
-    name: "Aditya Singh",
-    role: "Web Developer Head",
-    img: "/assets/img/team/aditya.jpg",
-    linkedin: "https://www.linkedin.com/in/aditya-singh-03bb48257/",
-  },
+  
 ];
 
 // ⭐ NEW Faculty Section
