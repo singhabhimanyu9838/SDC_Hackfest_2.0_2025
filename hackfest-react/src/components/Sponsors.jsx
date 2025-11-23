@@ -18,13 +18,11 @@ const Sponsors = () => {
   const alumniSponsors = [
     { name: "Abhinay Yadav", role: "Alumni Sponsor", img: "/assets/img/sponsors/abhinav.png", linkedin: "https://www.linkedin.com/in/abhinay01/" },
     { name: "Shekhar Mishra", role: "Alumni Sponsor", img: "/assets/img/sponsors/shekhar.jpg", linkedin: "https://www.linkedin.com/in/shekharmishraa/" },
-    { name: "Ayush Gupta", role: "Alumni Sponsor", img: "/assets/img/sponsors/ayush.jpg", linkedin: "https://www.linkedin.com/in/ayush-gupta-5a8058227/" },
-    { name: "Arpan Bhadoria", role: "Alumni Sponsor", img: "/assets/img/sponsors/arpan.jpg", linkedin: "https://www.linkedin.com/in/arpan-singh-bhadauria-271b55207/" },
     { name: "Akansha Pal", role: "Alumni Sponsor", img: "/assets/img/sponsors/akansha.jpg", linkedin: "https://www.linkedin.com/in/akanksha-pal-0380a7227/" },
-    
+    { name: "Arpan Bhadoria", role: "Alumni Sponsor", img: "/assets/img/sponsors/arpan.jpg", linkedin: "https://www.linkedin.com/in/arpan-singh-bhadauria-271b55207/" },
     { name: "Himanshu sahu", role: "Alumni Sponsor", img: "/assets/img/sponsors/himanshu.jpg", linkedin: "https://www.linkedin.com/in/himanshu-sahu75/overlay/photo" },
-    { name: "Piyush sahu", role: "Alumni Sponsor", img: "/assets/img/sponsors/piyush.png", linkedin: "https://www.linkedin.com/in/piyush-sahu-546382227/" },
-    
+    { name: "Ayush Gupta", role: "Alumni Sponsor", img: "/assets/img/sponsors/ayush.jpg", linkedin: "https://www.linkedin.com/in/ayush-gupta-5a8058227/" },
+     { name: "Piyush sahu", role: "Alumni Sponsor", img: "/assets/img/sponsors/piyush.png", linkedin: "https://www.linkedin.com/in/piyush-sahu-546382227/" }, 
    
   ];
 
