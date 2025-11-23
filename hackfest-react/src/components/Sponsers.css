@@ -1,45 +1,62 @@
-/* Sponsor Section Layout */
-.sponsor-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-  padding: 0 20px;
+/* Centered Rows */
+.sponsor-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+/* ROW WIDTH CONTROL */
+.row-3 .sponsor-card {
+  flex: 1 1 calc(33.33% - 22px);
+  max-width: 300px;
+}
+
+.row-2 .sponsor-card {
+  flex: 1 1 calc(50% - 22px);
+  max-width: 320px;
 }
 
 /* Sponsor Card */
 .sponsor-card {
   background: rgba(0, 10, 20, 0.6);
   border-radius: 15px;
-  padding: 25px;
+  padding: 22px;
+  height: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
   border: 1px solid rgba(0, 255, 255, 0.15);
   transition: 0.3s ease;
-  overflow: hidden;
 }
 
-/* Hover Glow */
 .sponsor-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 35px rgba(0, 255, 255, 0.4);
 }
 
-/* Sponsor Image */
+/* IMAGE INSIDE CARD */
 .sponsor-card img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   max-height: 120px;
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
 }
 
-/* Mobile Responsive Fix */
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 600px) {
+
+  .row-3 .sponsor-card,
+  .row-2 .sponsor-card {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+
   .sponsor-card {
-    height: 140px;
+    height: 150px;
     padding: 15px;
   }
 
@@ -48,14 +65,246 @@
   }
 }
 
-@media (max-width: 400px) {
-  .sponsor-card {
-    padding: 10px;
-    height: 120px;
+/* =============================
+   ALUMNI SPONSOR GRID
+=/* =====================================
+    ALUMNI SPONSOR GRID
+===================================== */
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+/* Alumni Card */
+.alumni-card {
+  background: rgba(0, 10, 20, 0.7);
+  padding: 22px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  transition: 0.3s ease;
+}
+
+/* Hover */
+.alumni-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.4);
+}
+
+.alumni-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.alumni-card h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.alumni-card p {
+  color: #45b6b6;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* LinkedIn Icon */
+.linkedin-wrap {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.linkedin-icon {
+  font-size: 32px;
+  color: #0e76a8;
+  transition: 0.3s ease;
+}
+
+/* Hover Glow */
+@media (hover: hover) {
+  .linkedin-wrap:hover .linkedin-icon {
+    color: #49d2ff;
+    transform: scale(1.22) translateY(-3px);
+    text-shadow: 0 0 10px #49d2ff, 0 0 20px #49d2ff;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .alumni-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .sponsor-card img {
-    max-height: 70px;
+  .alumni-card {
+    max-width: 85%;
+  }
+}
+
+/* ===============================
+   ALUMNI GRID → 4 + 3 centered
+=============================== */
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Alumni card styling */
+.alumni-card {
+  background: rgba(0, 10, 20, 0.7);
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  width: 100%;
+  max-width: 260px;
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.22);
+  transition: 0.3s;
+}
+
+.alumni-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 26px rgba(0, 255, 255, 0.45);
+}
+
+/* Image */
+.alumni-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.alumni-card h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.alumni-card p {
+  color: #45b6b6;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* LinkedIn Icon */
+.linkedin-wrap {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.linkedin-icon {
+  font-size: 32px;
+  color: #0e76a8;
+  transition: 0.3s ease;
+}
+
+.linkedin-wrap:hover .linkedin-icon {
+  color: #49d2ff;
+  transform: scale(1.22);
+}
+
+/* Center last row of 3 alumni */
+.alumni-grid > :nth-last-child(-n+3):nth-child(n+5) {
+  grid-column: span 1;
+}
+
+/* Tablet → 2 per row */
+@media (max-width: 992px) {
+  .alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile → 1 per row */
+@media (max-width: 576px) {
+  .alumni-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* =============================
+   Alumni Grid → 4 items row
+============================= */
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* =============================
+   Alumni Grid Center → 3 items center-aligned
+============================= */
+.alumni-grid-center {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Max width for card */
+.alumni-card {
+  background: rgba(0, 10, 20, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+/* Image style */
+.alumni-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* =============================
+   Tablet → 2 cards per row
+============================= */
+@media (max-width: 992px) {
+  .alumni-grid,
+  .alumni-grid-center {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =============================
+   Mobile → 1 card per row
+============================= */
+@media (max-width: 576px) {
+  .alumni-grid,
+  .alumni-grid-center {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

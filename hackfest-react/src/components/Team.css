@@ -1,6 +1,6 @@
-/* =========================================================
-    GRID: 4 cards → 2 cards → 1 card
-========================================================= */
+/* ===============================
+   GRID FOR TEAM (4 then 3 split)
+================================*/
 .team-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -9,25 +9,34 @@
   width: 100%;
 }
 
-/* Tablet (medium screen: 2 cards) */
+.team-grid-center {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+/* Tablet */
 @media (max-width: 992px) {
-  .team-grid {
+  .team-grid,
+  .team-grid-center {
     grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
+    display: grid;
   }
 }
 
-/* Mobile (small screen: 1 card) */
+/* Mobile */
 @media (max-width: 576px) {
-  .team-grid {
+  .team-grid,
+  .team-grid-center {
     grid-template-columns: repeat(1, 1fr);
-    gap: 25px;
   }
 }
 
-/* =========================================================
-    CARD DESIGN
-========================================================= */
+/* ===============================
+   TEAM CARD
+================================*/
 .team-card {
   background: #0d0f12;
   padding: 20px;
@@ -41,44 +50,14 @@
   transform-style: preserve-3d;
 }
 
-/* Responsive height control */
-@media (max-width: 576px) {
-  .team-card {
-    min-height: 350px;
-    padding: 18px;
-  }
+.team-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
 }
 
-@media (max-width: 400px) {
-  .team-card {
-    max-width: 90%;
-  }
-}
-
-/* =========================================================
-    HOVER EFFECTS (DESKTOP ONLY)
-========================================================= */
-@media (hover: hover) {
-  .team-card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
-  }
-
-  .tilt:hover {
-    transform: perspective(600px) rotateX(8deg) rotateY(-8deg);
-  }
-}
-
-/* MOBILE: disable 3D tilt (prevents shaking) */
-@media (max-width: 768px) {
-  .tilt:hover {
-    transform: none !important;
-  }
-}
-
-/* =========================================================
-    IMAGE (Fully responsive)
-========================================================= */
+/* ===============================
+   TEAM IMAGE
+================================*/
 .team-img {
   width: 100%;
   max-width: 240px;
@@ -88,120 +67,71 @@
   margin-bottom: 15px;
 }
 
-/* Mobile image sizing */
-@media (max-width: 576px) {
-  .team-img {
-    max-width: 200px;
-    height: 220px;
-  }
-}
-
-/* Tiny screens fix */
-@media (max-width: 400px) {
-  .team-img {
-    max-width: 180px;
-    height: 200px;
-  }
-}
-
-/* =========================================================
-    TEXT RESPONSIVE
-========================================================= */
+/* ===============================
+   TEXT
+================================*/
 .team-card h2 {
   color: white;
   font-size: 20px;
-  margin-bottom: 5px;
   font-weight: 600;
 }
 
 .team-card h5 {
   color: #45b6b6;
   font-size: 15px;
-  margin-bottom: 12px;
 }
 
-/* Mobile resize */
-@media (max-width: 576px) {
-  .team-card h2 {
-    font-size: 18px;
-  }
-  .team-card h5 {
-    font-size: 14px;
-  }
-}
-
-/* =========================================================
-    LINKEDIN ICON
-========================================================= */
-.linkedin-icon {
-  font-size: 32px;
-  color: #0e76a8;
-  transition: 0.3s;
-}
-
-/* Hover (desktop only) */
-@media (hover: hover) {
-  .linkedin-icon:hover {
-    color: #49d2ff;
-    transform: scale(1.2);
-  }
-}
-
-/* Mobile center alignment fix */
-@media (max-width: 400px) {
-  .linkedin-icon {
-    font-size: 28px;
-  }
-}
-/* Faculty Section Custom Width */
-.faculty-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-/* Make faculty card wider */
-.faculty-card {
-  max-width: 360px !important;  /* Larger card */
-  width: 100%;
-}
-
-/* Responsive for mobile */
-@media (max-width: 576px) {
-  .faculty-card {
-    max-width: 90% !important;
-  }
-}
-
-/* =========================================================
-    LINKEDIN ICON
-========================================================= *//* LINKEDIN ICON BASE */
-.linkedin-wrap {
-  display: inline-block;
-}
-
+/* ===============================
+   LINKEDIN ICON
+================================*/
 .linkedin-icon {
   font-size: 32px;
   color: #0e76a8;
   transition: 0.3s ease;
 }
 
-/* DESKTOP HOVER: smooth glow + scale */
-@media (hover: hover) {
-  .linkedin-wrap:hover .linkedin-icon {
-    color: #49d2ff;
-    transform: scale(1.22) translateY(-3px);
-    text-shadow: 0 0 8px #49d2ff, 0 0 15px #49d2ff;
-  }
+.linkedin-icon:hover {
+  color: #49d2ff;
+  transform: scale(1.2);
 }
 
-/* Mobile size fix */
-@media (max-width: 400px) {
-  .linkedin-icon {
-    font-size: 28px;
-  }
+/* ===============================
+   FACULTY GRID
+================================*/
+.faculty-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
+.faculty-card {
+  max-width: 360px !important;
+  width: 100%;
+}
 
+@media (max-width: 576px) {
+  .faculty-card {
+    max-width: 90% !important;
+  }
+}
+/* SECOND ROW (3 MEMBERS) - ALWAYS CENTERED */
+.team-grid-center {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Mobile fix: ensure cards stay centered */
+@media (max-width: 576px) {
+  .team-grid-center {
+    justify-content: center !important;
+    text-align: center;
+  }
+  .team-grid-center .team-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

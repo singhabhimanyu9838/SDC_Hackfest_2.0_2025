@@ -1,0 +1,144 @@
+.result-section {
+  position: relative;
+  padding: 120px 20px;
+  min-height: 100vh;
+  background: url("/assets/img/bg/pirate-bg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 10, 20, 0.65);
+  backdrop-filter: blur(2px);
+}
+
+.result-container {
+  position: relative;
+  z-index: 10;
+  max-width: 750px;
+  text-align: center;
+  color: #fff;
+}
+
+.result-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #45b6b6;
+  text-shadow: 0 0 15px #45b6b6;
+  margin-bottom: 20px;
+}
+
+.result-tagline {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.highlight {
+  color: #ffdf6b;
+  font-weight: 600;
+}
+
+.result-coming-card {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  margin-bottom: 35px;
+}
+
+.result-coming-card h2 {
+  color: #45b6b6;
+  margin-bottom: 10px;
+}
+
+.stay-tuned {
+  font-size: 18px;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.back-home-btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: #45b6b6;
+  border: none;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.35);
+}
+
+.back-home-btn:hover {
+  background: #2ca8a8;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.55);
+  transform: translateY(-3px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .result-title {
+    font-size: 32px;
+  }
+
+  .result-coming-card {
+    padding: 20px;
+  }
+
+  .back-home-btn {
+    width: 100%;
+    font-size: 17px;
+  }
+}
+/* Better visibility */
+.result-tagline {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  color: #e6f7ff; /* brighter */
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.4);
+}
+
+.highlight {
+  color: #ffd86b;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 215, 100, 0.8);
+}
+
+.result-coming-card {
+  background: rgba(10, 20, 35, 0.7);
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 255, 255, 0.35);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  margin-bottom: 38px;
+}
+
+.result-coming-card h2 {
+  color: #5ef7ff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  margin-bottom: 12px;
+}
+
+.result-coming-card p {
+  font-size: 17px;
+  color: #d9f5ff; /* brighter paragraph text */
+  margin: 5px 0;
+}
+
+.stay-tuned {
+  font-size: 20px;
+  color: #ffefc2;
+  text-shadow: 0 0 10px rgba(255, 235, 180, 0.8);
+  margin-bottom: 35px;
+}

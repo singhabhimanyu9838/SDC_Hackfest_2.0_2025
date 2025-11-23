@@ -32,30 +32,23 @@ const Banner = () => {
         </div>
 
         <div className="home_button-container">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href=""
-          >
+          <a target="_blank" rel="noreferrer" href="">
             <button className="button-register banner-button-style">
               <i className="fa-solid fa-up-right-from-square" />
               &nbsp;Apply for Hackathon
             </button>
           </a>
-          <a
-            href=""
-            target="_blank"
-            rel="noreferrer"
-          >
-           <button
-  className="button-discord banner-button-style"
-  onClick={() => (window.location.href = "/register")}
->
-  <i className="fa-brands fa-discord" />
-  &nbsp;Codeathon
-</button>
-
-
+          <a href="" target="_blank" rel="noreferrer">
+            <button
+              className="button-discord banner-button-style"
+              onClick={() => (window.location.href = "/register")}
+            >
+              {/* <i className="fa-solid fa-terminal" />
+<i className="fa-solid fa-bug" />
+<i className="fa-solid fa-laptop-code" /> */}
+              <i className="fa-solid fa-code" />
+              &nbsp;Codeathon
+            </button>
           </a>
         </div>
       </div>

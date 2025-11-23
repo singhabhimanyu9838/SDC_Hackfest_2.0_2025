@@ -34,10 +34,10 @@ const About = () => {
               </p>
 
               <p>
-                <b>Venue</b> [In-Person] - Rajkiya Engineering College, Banda
+                <b>Venue</b> - Rajkiya Engineering College, Banda
               </p>
               <p>
-                <b>Dates</b> - 25-26 November 2025
+                <b>Dates</b> - 9-10 December 2025
               </p>
             </div>
           </div>

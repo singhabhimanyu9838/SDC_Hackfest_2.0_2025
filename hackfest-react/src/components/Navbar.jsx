@@ -15,6 +15,7 @@ const Navbar = () => {
     "teams",
     "faq",
     "contact",
+    "result", // <— NEW PAGE
   ];
 
   // Scroll Spy + Shrink navbar
@@ -41,6 +42,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Scroll to in-page sections
   const scrollTo = (id) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -58,12 +60,24 @@ const Navbar = () => {
       <ul className="nav-links">
         {sections.map((sec) => (
           <li key={sec}>
-            <a
-              onClick={() => scrollTo(sec)}
-              className={activeSection === sec ? "active-nav" : ""}
-            >
-              {sec.charAt(0).toUpperCase() + sec.slice(1)}
-            </a>
+            {/* SPECIAL CASE — RESULT PAGE */}
+            {sec === "result" ? (
+              <a
+                href="/result"
+                className="result-link"
+                style={{ cursor: "pointer" }}
+              >
+                Result
+              </a>
+            ) : (
+              <a
+                onClick={() => scrollTo(sec)}
+                className={activeSection === sec ? "active-nav" : ""}
+                style={{ cursor: "pointer" }}
+              >
+                {sec.charAt(0).toUpperCase() + sec.slice(1)}
+              </a>
+            )}
           </li>
         ))}
       </ul>
@@ -80,12 +94,17 @@ const Navbar = () => {
       <ul className={`mobile-menu ${mobileOpen ? "open" : ""}`}>
         {sections.map((sec) => (
           <li key={sec}>
-            <a
-              onClick={() => scrollTo(sec)}
-              className={activeSection === sec ? "active-nav" : ""}
-            >
-              {sec.charAt(0).toUpperCase() + sec.slice(1)}
-            </a>
+            {/* SPECIAL CASE — RESULT PAGE */}
+            {sec === "result" ? (
+              <a href="/result">Result</a>
+            ) : (
+              <a
+                onClick={() => scrollTo(sec)}
+                className={activeSection === sec ? "active-nav" : ""}
+              >
+                {sec.charAt(0).toUpperCase() + sec.slice(1)}
+              </a>
+            )}
           </li>
         ))}
       </ul>

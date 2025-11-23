@@ -97,33 +97,30 @@ const mentors = [
     img: "/assets/img/team/Hrishabh.jpg",
     linkedin: "https://www.linkedin.com/in/hrishabh-gupta-50442821a/",
   },
-  
 ];
 
-// ⭐ NEW Faculty Section
+// ⭐ Faculty Coordinators Section
 const faculty = [
   {
     name: "Dr. Vibhash Yadav Sir",
-    role: "Faculty Coordinator",
-    img: "/assets/img/team/faculty/fac1.jpg",
-    linkedin: "https://linkedin.com",
+    role: "HEAD OF DEPARTMENT (INFORMATION TECHNOLOGY)  ",
+    img: "/assets/img/team/vibhash.png",
+    linkedin: "https://www.linkedin.com/in/dr-vibhash-yadav-83669954/",
   },
   {
     name: "Mr. Abhijeet Singh Sir",
-    role: "Faculty Coordinator",
-    img: "/assets/img/team/faculty/fac2.jpg",
-    linkedin: "https://linkedin.com",
+    role: "FACULTY COORDINATOR",
+    img: "/assets/img/team/abhijeet.png",
+    linkedin: "https://www.linkedin.com/in/abhijeet-singh-02789b41/",
   },
 ];
 
 const Card = ({ person }) => (
   <div className="team-card tilt">
     <img src={person.img} alt={person.name} className="team-img" />
-
     <h2>{person.name}</h2>
     <h5>{person.role}</h5>
-
-    <a href={person.linkedin} target="_blank" rel="noreferrer" className="linkedin-wrap">
+    <a href={person.linkedin} target="_blank" rel="noreferrer">
       <FaLinkedin className="linkedin-icon" />
     </a>
   </div>
@@ -134,45 +131,47 @@ const Team = () => {
     <section id="teams" className="pb100 pt100">
       <div className="container">
         <div className="section_title">
-          <h3 className="title-dark" data-aos="fade-right">
-            Meet The Crew
-          </h3>
+          <h3 className="title-dark">Meet The Crew</h3>
         </div>
 
-        {/* TEAM */}
+        {/* TEAM SECTION */}
         <div className="section_title">
           <h4 className="title-dark clr-white">Team</h4>
         </div>
 
-        <div className="team-grid" data-aos="fade-up">
-          {crew.map((p) => (
+        {/* ⭐ CREW ROW 1 → 4 Members */}
+        <div className="team-grid">
+          {crew.slice(0, 4).map((p) => (
             <Card key={p.name} person={p} />
           ))}
         </div>
 
-        {/* MENTORS */}
+        {/* ⭐ CREW ROW 2 → 3 Members Centered */}
+        <div className="team-grid-center">
+          {crew.slice(4).map((p) => (
+            <Card key={p.name} person={p} />
+          ))}
+        </div>
+
+        {/* MENTORS SECTION */}
         <div className="section_title" style={{ marginTop: 40 }}>
           <h4 className="title-dark clr-white">Mentors</h4>
         </div>
 
-        <div className="team-grid" data-aos="fade-up">
+        <div className="team-grid">
           {mentors.map((p) => (
             <Card key={p.name} person={p} />
           ))}
         </div>
 
-        {/* ⭐ FACULTY SECTION */}
+        {/* FACULTY SECTION */}
         <div className="section_title" style={{ marginTop: 40 }}>
           <h4 className="title-dark clr-white">Faculty Coordinators</h4>
         </div>
 
-        <div
-          className="faculty-grid"
-          data-aos="fade-up"
-          data-aos-duration="900"
-        >
+        <div className="faculty-grid">
           {faculty.map((p) => (
-            <Card key={p.name} person={p} className="faculty-card" />
+            <Card key={p.name} person={p} />
           ))}
         </div>
       </div>

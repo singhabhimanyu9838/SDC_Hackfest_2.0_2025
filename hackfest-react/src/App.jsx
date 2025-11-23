@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import RegistrationForm from "./components/RegistrationForm";
 import AdminLogin from "./components/AdminLogin";
 import Success from "./pages/Success";
+import Result from "./pages/Result";
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
       <Route path="/register" element={<RegistrationForm />} />
       <Route path="/admin" element={<AdminLogin />} />
       <Route path="/success" element={<Success />} />
+      <Route path="/result" element={<Result />} />
 
     </Routes>
   );

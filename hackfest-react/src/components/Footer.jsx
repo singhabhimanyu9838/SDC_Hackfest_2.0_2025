@@ -88,7 +88,7 @@ const Footer = () => {
                       <i className="fab fa-linkedin-in" /> Linkedln
                     </a>
                     <br />
-                    <a
+                    {/* <a
                       href="https://t.me/joinchat/LlOuzVQ1_GSIbQ8oodUOwQ"
                       target="_blank"
                       rel="noreferrer"
@@ -96,15 +96,15 @@ const Footer = () => {
                     >
                       <i className="fab fa-telegram" /> Telegram
                     </a>
-                    <br />
-                    <a
+                    <br /> */}
+                    {/* <a
                       href="https://github.com/hackcbs"
                       target="_blank"
                       rel="noreferrer"
                       className="resource_color"
                     >
                       <i className="fab fa-github" /> Github
-                    </a>
+                    </a> */}
                   </div>
                 </div>
 
@@ -116,11 +116,11 @@ const Footer = () => {
     <ul className="list-inline lgx-social-footer">
 
       {/* Facebook */}
-      <li>
+      {/* <li>
         <a href="https://www.facebook.com/hackcbs1/" target="_blank" rel="noreferrer">
           <i className="fab fa-facebook-f" />
         </a>
-      </li>
+      </li> */}
 
       {/* Twitter / X */}
       <li>
@@ -144,43 +144,43 @@ const Footer = () => {
       </li>
 
       {/* YouTube */}
-      <li>
+      {/* <li>
         <a href="https://www.youtube.com/@studentdeveloperclub" target="_blank" rel="noreferrer">
           <i className="fab fa-youtube" />
         </a>
-      </li>
+      </li> */}
 
       {/* GitHub */}
-      <li>
+      {/* <li>
         <a href="https://github.com/studentdeveloperclub" target="_blank" rel="noreferrer">
           <i className="fab fa-github" />
         </a>
-      </li>
+      </li> */}
 
       {/* Discord */}
-      <li>
+      {/* <li>
         <a href="https://discord.com/invite/YOUR_INVITE_LINK" target="_blank" rel="noreferrer">
           <i className="fab fa-discord" />
         </a>
-      </li>
+      </li> */}
 
       {/* WhatsApp */}
-      <li>
+      {/* <li>
         <a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noreferrer">
           <i className="fab fa-whatsapp" />
         </a>
-      </li>
+      </li> */}
 
       {/* Telegram */}
-      <li>
+      {/* <li>
         <a href="https://t.me/YOUR_CHANNEL" target="_blank" rel="noreferrer">
           <i className="fab fa-telegram" />
         </a>
-      </li>
+      </li> */}
 
       {/* Website / Globe */}
       <li>
-        <a href="https://yourwebsite.com" target="_blank" rel="noreferrer">
+        <a href="https://recbanda.ac.in/" target="_blank" rel="noreferrer">
           <i className="fas fa-globe" />
         </a>
       </li>
