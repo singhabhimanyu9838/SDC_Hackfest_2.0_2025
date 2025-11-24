@@ -32,7 +32,7 @@ const Banner = () => {
         </div>
 
         <div className="home_button-container">
-          <a target="_blank" rel="noreferrer" href="">
+          <a target="_blank" rel="noreferrer" href="https://www.namespace.world/events/c547d445-fa63-4eff-bda6-80a6404254fe">
             <button className="button-register banner-button-style">
               <i className="fa-solid fa-up-right-from-square" />
               &nbsp;Apply for Hackathon

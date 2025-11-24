@@ -4,15 +4,16 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Sponsors = () => {
   const row1 = [
-    "/assets/img/sponsors/spon2.jpg",
-    "/assets/img/sponsors/spon3.jpg",
-    "/assets/img/sponsors/spon4.jpg",
-  ];
+  { img: "/assets/img/sponsors/spon2.jpg", url: "https://company1.com" },
+  { img: "/assets/img/sponsors/spon3.jpg", url: "https://company2.com" },
+  { img: "/assets/img/sponsors/spon4.jpg", url: "https://www.namespace.world/" },
+];
 
-  const row2 = [
-    "/assets/img/sponsors/spon7.png",
-    "/assets/img/sponsors/spon6.jpg",
-  ];
+const row2 = [
+  { img: "/assets/img/sponsors/spon7.png", url: "https://company4.com" },
+  { img: "/assets/img/sponsors/spon6.jpg", url: "https://ezsync.in/" },
+];
+
 
   // ⭐ NEW Alumni Sponsors (Dummy)
   const alumniSponsors = [
@@ -22,7 +23,7 @@ const Sponsors = () => {
     { name: "Arpan Bhadoria", role: "Alumni Sponsor", img: "/assets/img/sponsors/arpan.jpg", linkedin: "https://www.linkedin.com/in/arpan-singh-bhadauria-271b55207/" },
     { name: "Himanshu sahu", role: "Alumni Sponsor", img: "/assets/img/sponsors/himanshu.jpg", linkedin: "https://www.linkedin.com/in/himanshu-sahu75/overlay/photo" },
     { name: "Ayush Gupta", role: "Alumni Sponsor", img: "/assets/img/sponsors/ayush.jpg", linkedin: "https://www.linkedin.com/in/ayush-gupta-5a8058227/" },
-     { name: "Piyush sahu", role: "Alumni Sponsor", img: "/assets/img/sponsors/piyush.png", linkedin: "https://www.linkedin.com/in/piyush-sahu-546382227/" }, 
+     { name: "Piyush sahu", role: "Alumni Sponsor", img: "/assets/img/sponsors/piyush.jpg", linkedin: "https://www.linkedin.com/in/piyush-sahu-546382227/" }, 
    
   ];
 
@@ -38,23 +39,41 @@ const Sponsors = () => {
 
         {/* ROW 1 — 3 sponsors */}
         <div className="sponsor-row row-3">
-          {row1.map((src, i) => (
-            <div className="sponsor-card" key={i}>
-              <img src={src} alt={`Sponsor ${i + 1}`} />
-            </div>
-          ))}
-        </div>
+            {row1.map((item, i) => (
+              <a
+                key={i}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sponsor-link"
+              >
+                <div className="sponsor-card">
+                  <img src={item.img} alt={`Sponsor ${i + 1}`} />
+                </div>
+              </a>
+            ))}
+          </div>
+
 
         {/* ROW 2 — 2 sponsors */}
-        <div className="sponsor-row row-2">
-          {row2.map((src, i) => (
-            <div className="sponsor-card" key={i}>
-              <img src={src} alt={`Sponsor ${i + 4}`} />
-            </div>
+       <div className="sponsor-row row-2">
+          {row2.map((item, i) => (
+            <a
+              key={i}
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sponsor-link"
+            >
+              <div className="sponsor-card">
+                <img src={item.img} alt={`Sponsor ${i + 4}`} />
+              </div>
+            </a>
           ))}
         </div>
 
-        {/* ⭐ ALUMNI SPONSORS */}
+
+     
        {/* ⭐ ALUMNI SPONSORS TITLE */}
 <div className="section_title" style={{ marginTop: 60 }}>
   <h3 className="title-dark" data-aos="fade-right">
@@ -92,23 +111,19 @@ const Sponsors = () => {
 
 
         {/* BUTTON → Scrolls to Contact Section */}
-        <div className="text-center" style={{ marginTop: 24 }}>
-          <a
-            href="#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              document.querySelector("#contact").scrollIntoView({
-                behavior: "smooth",
-              });
-            }}
-          >
-            <button className="cta sponsor_us_btn">
-              <span className="hover-underline-animation" style={{ fontSize: 17 }}>
-                Sponsor Us
-              </span>
-            </button>
-          </a>
-        </div>
+      <div className="text-center custom-btn-wrapper">
+  <a
+    href="https://forms.gle/px75HWj88NePPwas8"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="pirate-btn"
+  >
+    Sponsor Us ⚔️
+  </a>
+</div>
+
+
+
 
       </div>
     </section>
