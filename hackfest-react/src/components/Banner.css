@@ -1,0 +1,63 @@
+.tagline-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: -11rem;
+  position: relative;
+  z-index: 50;
+}
+
+.tagline-typewriter {
+  font-size: 36px;
+  font-weight: 800;
+  color: #45e7e7;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+
+  /* Keep it centered */
+  display: inline-block;
+  margin: 0 auto;
+
+  /* Neon glow */
+  text-shadow:
+    0 0 10px rgba(0, 255, 255, 0.9),
+    0 0 20px rgba(0, 255, 255, 0.7),
+    0 0 40px rgba(0, 255, 255, 0.5);
+
+  /* Typewriter */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #45e7e7;
+
+  /* Trick: reserve full width so text types in place */
+  width: 100%;
+  max-width: 700px; /* adjust size */
+  margin-left: auto;
+  margin-right: auto;
+
+  animation:
+    typing 3s steps(36),
+    cursorBlink 0.6s step-end infinite,
+    removeCursor 0s 3s forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes cursorBlink {
+  50% { border-color: transparent; }
+}
+
+@keyframes removeCursor {
+  to { border-right: none; }
+}
+
+@media (max-width: 600px) {
+  .tagline-typewriter {
+    font-size: 20px;
+    max-width: 400px;
+  }
+}

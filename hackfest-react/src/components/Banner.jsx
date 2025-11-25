@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Banner.css";
 const Banner = () => {
   return (
     <section className="banner-parallax">
@@ -12,6 +12,12 @@ const Banner = () => {
       </div>
 
       <div className="home_container" id="home-section">
+        <div className="tagline-wrapper">
+          <h2 className="tagline-typewriter">
+            Rec Banda Ultimate Tech Showdown
+          </h2>
+        </div>
+
         <div className="home_date-container">
           <div className="banner-video-overlay" style={{ marginTop: "5rem" }}>
             <img
@@ -32,7 +38,11 @@ const Banner = () => {
         </div>
 
         <div className="home_button-container">
-          <a target="_blank" rel="noreferrer" href="https://www.namespace.world/events/c547d445-fa63-4eff-bda6-80a6404254fe">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.namespace.world/events/c547d445-fa63-4eff-bda6-80a6404254fe"
+          >
             <button className="button-register banner-button-style">
               <i className="fa-solid fa-up-right-from-square" />
               &nbsp;Apply for Hackathon
