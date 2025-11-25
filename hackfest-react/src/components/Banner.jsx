@@ -21,7 +21,7 @@ const Banner = () => {
         <div className="home_date-container">
           <div className="banner-video-overlay" style={{ marginTop: "5rem" }}>
             <img
-              src="/assets/img/new_assets/WhatsApp_Image_2025-04-03_at_22.32.21_0297acc1-removebg-preview.png"
+              src="/assets/img/new_assets/hacktag.png"
               className="hackcbs_landing"
               alt="Hackfest 2.0"
             />
@@ -30,7 +30,7 @@ const Banner = () => {
           <p style={{ textAlign: "center", marginTop: "30px" }}>
             <img
               src="/assets/img/new_assets/bannner_date.png"
-              alt="9th-10th December"
+              alt="10th-11th December"
               width="400"
               height="80"
             />

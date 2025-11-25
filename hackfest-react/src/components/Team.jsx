@@ -58,7 +58,7 @@ const mentors = [
   {
     name: "Aditya Singh",
     role: "Web Developer Head",
-    img: "/assets/img/team/aditya.jpg",
+    img: "/assets/img/team/J.D.jpg",
     linkedin: "https://www.linkedin.com/in/aditya-singh-03bb48257/",
   },
   {
@@ -94,16 +94,16 @@ const mentors = [
   {
     name: "Hrishabh Gupta",
     role: "CP Head(Java)",
-    img: "/assets/img/team/Hrishabh.jpg",
+    img: "/assets/img/team/Hrishab.jpg",
     linkedin: "https://www.linkedin.com/in/hrishabh-gupta-50442821a/",
   },
 ];
 
-// ⭐ Faculty Coordinators Section
+// ⭐ Faculty Coordinators
 const faculty = [
   {
     name: "Dr. Vibhash Yadav Sir",
-    role: "HEAD OF DEPARTMENT (INFORMATION TECHNOLOGY)  ",
+    role: "HEAD OF DEPARTMENT (INFORMATION TECHNOLOGY)",
     img: "/assets/img/team/vibhash.png",
     linkedin: "https://www.linkedin.com/in/dr-vibhash-yadav-83669954/",
   },
@@ -115,15 +115,21 @@ const faculty = [
   },
 ];
 
+// ⭐ CLICKABLE CARD COMPONENT
 const Card = ({ person }) => (
-  <div className="team-card tilt">
-    <img src={person.img} alt={person.name} className="team-img" />
-    <h2>{person.name}</h2>
-    <h5>{person.role}</h5>
-    <a href={person.linkedin} target="_blank" rel="noreferrer">
+  <a
+    href={person.linkedin}
+    target="_blank"
+    rel="noreferrer"
+    className="team-card-link"
+  >
+    <div className="team-card tilt">
+      <img src={person.img} alt={person.name} className="team-img" />
+      <h2>{person.name}</h2>
+      <h5>{person.role}</h5>
       <FaLinkedin className="linkedin-icon" />
-    </a>
-  </div>
+    </div>
+  </a>
 );
 
 const Team = () => {
@@ -139,21 +145,21 @@ const Team = () => {
           <h4 className="title-dark clr-white">Team</h4>
         </div>
 
-        {/* ⭐ CREW ROW 1 → 4 Members */}
+        {/* ⭐ Row 1 → 4 members */}
         <div className="team-grid">
           {crew.slice(0, 4).map((p) => (
             <Card key={p.name} person={p} />
           ))}
         </div>
 
-        {/* ⭐ CREW ROW 2 → 3 Members Centered */}
+        {/* ⭐ Row 2 → 3 centered */}
         <div className="team-grid-center">
           {crew.slice(4).map((p) => (
             <Card key={p.name} person={p} />
           ))}
         </div>
 
-        {/* MENTORS SECTION */}
+        {/* MENTORS */}
         <div className="section_title" style={{ marginTop: 40 }}>
           <h4 className="title-dark clr-white">Mentors</h4>
         </div>
@@ -164,7 +170,7 @@ const Team = () => {
           ))}
         </div>
 
-        {/* FACULTY SECTION */}
+        {/* FACULTY */}
         <div className="section_title" style={{ marginTop: 40 }}>
           <h4 className="title-dark clr-white">Faculty Coordinators</h4>
         </div>

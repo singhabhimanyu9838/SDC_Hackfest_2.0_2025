@@ -135,3 +135,11 @@
     margin-right: auto;
   }
 }
+.team-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.team-card-link:hover {
+  color: inherit;
+}
