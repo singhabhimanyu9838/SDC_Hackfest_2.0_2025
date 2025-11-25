@@ -4,8 +4,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Sponsors = () => {
   const row1 = [
-  { img: "/assets/img/sponsors/spon2.jpg", url: "https://company1.com" },
-  { img: "/assets/img/sponsors/spon3.jpg", url: "https://company2.com" },
+  { img: "/assets/img/sponsors/spon2.jpg", url: "https://www.matiks.in/" },
+  { img: "/assets/img/sponsors/spon3.jpg", url: "https://bilvaleaf.com/" },
   { img: "/assets/img/sponsors/spon4.jpg", url: "https://www.namespace.world/" },
 ];
 
