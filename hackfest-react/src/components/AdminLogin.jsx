@@ -57,6 +57,7 @@ const AdminLogin = () => {
       const data = await res.json();
       if (!res.ok) throw new Error(data.message);
 
+      // data items should have createdAt or created_at now (model ensures both)
       setRegs(data);
     } catch (err) {
       setMessage(`❌ ${err.message}`);
@@ -65,15 +66,17 @@ const AdminLogin = () => {
     }
   };
 
-  // ⭐ FIXED DELETE (ID + optimistic update + no rollback issues)
+  // Delete Registration
   const deleteUser = async (id) => {
     if (!window.confirm("Delete this registration?")) return;
 
     const oldRegs = [...regs];
-    setRegs((prev) => prev.filter((r) => {
-      const realId = r._id || r.id || r.registrationId;
-      return realId !== id;
-    }));
+    setRegs((prev) =>
+      prev.filter((r) => {
+        const realId = r._id || r.id || r.registrationId;
+        return realId !== id;
+      })
+    );
 
     try {
       const res = await fetch(`${API_BASE_URL}/api/registrations/${id}`, {
@@ -83,12 +86,7 @@ const AdminLogin = () => {
       });
 
       const data = await res.json();
-      console.log("Delete response:", data);
-
-      if (!res.ok) {
-        throw new Error(data.message || "Server delete failed.");
-      }
-
+      if (!res.ok) throw new Error(data.message || "Server delete failed.");
     } catch (err) {
       alert("Delete failed: " + err.message);
       setRegs(oldRegs);
@@ -117,6 +115,18 @@ const AdminLogin = () => {
     }
   }, [token]);
 
+  // helper to get timestamp in preferred format
+  const formatSubmittedAt = (r) => {
+    // r may have createdAt (ISO) or created_at, or created_at may be ISO string
+    const raw = r.createdAt || r.created_at || r.created_at;
+    if (!raw) return "—";
+    try {
+      return new Date(raw).toLocaleString();
+    } catch {
+      return raw;
+    }
+  };
+
   return (
     <section id="admin" className="admin-storm-section">
       <a href="/" className="storm-back-btn">← Back to Home</a>
@@ -129,10 +139,22 @@ const AdminLogin = () => {
 
           <form onSubmit={handleLogin} className="admin-form">
             <label className="admin-label">Email</label>
-            <input type="email" name="email" className="admin-input" onChange={handleChange} required />
+            <input
+              type="email"
+              name="email"
+              className="admin-input"
+              onChange={handleChange}
+              required
+            />
 
             <label className="admin-label">Password</label>
-            <input type="password" name="password" className="admin-input" onChange={handleChange} required />
+            <input
+              type="password"
+              name="password"
+              className="admin-input"
+              onChange={handleChange}
+              required
+            />
 
             {message && <p className="admin-message">{message}</p>}
 
@@ -149,8 +171,12 @@ const AdminLogin = () => {
           <h2 className="admin-title">🌊 Crew Registration Dashboard</h2>
 
           <div className="admin-actions">
-            <button className="storm-btn small" onClick={fetchRegistrations}>Reload List</button>
-            <button className="storm-btn small" onClick={exportExcel}>Export Excel</button>
+            <button className="storm-btn small" onClick={fetchRegistrations}>
+              Reload List
+            </button>
+            <button className="storm-btn small" onClick={exportExcel}>
+              Export Excel
+            </button>
 
             <button
               className="storm-btn small danger"
@@ -174,6 +200,7 @@ const AdminLogin = () => {
                   <th>College</th>
                   <th>Branch</th>
                   <th>Year</th>
+                  <th>Submitted At</th> {/* NEW COLUMN */}
                   <th>Delete</th>
                 </tr>
               </thead>
@@ -181,13 +208,17 @@ const AdminLogin = () => {
               <tbody>
                 {isFetching && (
                   <tr>
-                    <td colSpan="8" className="empty-msg">Loading registrations...</td>
+                    <td colSpan="9" className="empty-msg">
+                      Loading registrations...
+                    </td>
                   </tr>
                 )}
 
                 {!isFetching && regs.length === 0 && (
                   <tr>
-                    <td colSpan="8" className="empty-msg">No registrations found.</td>
+                    <td colSpan="9" className="empty-msg">
+                      No registrations found.
+                    </td>
                   </tr>
                 )}
 
@@ -203,8 +234,17 @@ const AdminLogin = () => {
                       <td>{r.college}</td>
                       <td>{r.branch}</td>
                       <td>{r.year}</td>
+
+                      {/* NEW: Timestamp (robust) */}
+                      <td>{formatSubmittedAt(r)}</td>
+
                       <td>
-                        <button className="delete-btn" onClick={() => deleteUser(realId)}>✖</button>
+                        <button
+                          className="delete-btn"
+                          onClick={() => deleteUser(realId)}
+                        >
+                          ✖
+                        </button>
                       </td>
                     </tr>
                   );
