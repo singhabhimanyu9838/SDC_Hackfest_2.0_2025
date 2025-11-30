@@ -159,14 +159,23 @@
    CROWN ROTATION
    =================================================== */
 
+
 .prize-crown img {
   width: 92px;
-  transition: .8s linear;
+  transition: none;         /* IMPORTANT — remove transform transition */
 }
 
+/* 🔥 Rotate once ONLY on hover-in */
 .prize-card:hover .prize-crown img {
-  transform: rotate(360deg);
+  animation: crownRotateOnce 0.65s linear forwards;
 }
+
+/* Keyframes (full rotation) */
+@keyframes crownRotateOnce {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 
 
 /* ===================================================
