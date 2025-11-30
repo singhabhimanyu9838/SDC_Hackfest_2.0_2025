@@ -201,7 +201,7 @@ const Sponsors = () => {
         <div className="collab-grid" data-aos="fade-up">
           {/* IEEE Card */}
           <a
-            href="https://www.linkedin.com/company/ieee/" // <-- your IEEE LinkedIn URL
+            href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A91151705&keywords=ieee%20student%20branch%20rec%20banda&origin=RICH_QUERY_SUGGESTION&position=0&searchId=c328b8ee-fa4d-446d-a2a2-c5646133f22f&sid=_tM&spellCorrectionEnabled=false" 
             target="_blank"
             rel="noreferrer"
             className="collab-link-wrapper"
@@ -217,7 +217,7 @@ const Sponsors = () => {
 
           {/* Incubation Center Card */}
           <a
-            href="https://www.linkedin.com/company/incubation-center-recb/" // <-- add correct link
+            href="https://www.linkedin.com/in/incubation-centre-rec-banda-16abab238/" 
             target="_blank"
             rel="noreferrer"
             className="collab-link-wrapper"
