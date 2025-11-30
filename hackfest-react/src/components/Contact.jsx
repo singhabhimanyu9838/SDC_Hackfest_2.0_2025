@@ -35,9 +35,11 @@ const Contact = () => {
                       <br />
                       <br />
                       <h5>
-                        <a href="mailto:sdc2021recbanda@gmail.com">
-                          sdc2021recbanda@gmail.com
-                        </a>
+                       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sdc2021recbanda@gmail.com" target="_blank">
+  sdc2021recbanda@gmail.com
+</a>
+
+
                       </h5>
                     </div>
                   </div>
