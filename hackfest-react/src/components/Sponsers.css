@@ -628,7 +628,7 @@
 
 /* Zoom on hover */
 .collab-card:hover .collab-img{
-  transform: scale(1.12);
+  transform: scale(1.06);
 }
 
 
@@ -659,6 +659,12 @@
   justify-content: center;
   align-items: center;
 }
+.recb-img{
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  transition: 0.4s ease;
+}
 
 .text-logo h2 {
   font-size: 35px;
@@ -668,10 +674,10 @@
 }
 
 .text-logo p {
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 600;
   color: #9beaff;
-  margin-top: 4px;
+  margin-top: 2px;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 

@@ -223,9 +223,15 @@ const Sponsors = () => {
             className="collab-link-wrapper"
           >
             <div className="collab-card sponsor-style no-logo-card">
+              <img
+                src="/assets/img/recb.png"
+                alt="IEEE"
+                className="recb-img"
+              />
               <div className="text-logo">
+                <p>Rajkiya Engineering College Banda</p>
                 <h2>Incubation Center</h2>
-                <p>RECB</p>
+          
               </div>
             </div>
           </a>
