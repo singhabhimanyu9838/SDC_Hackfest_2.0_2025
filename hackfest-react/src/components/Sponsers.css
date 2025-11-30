@@ -628,7 +628,7 @@
 
 /* Zoom on hover */
 .collab-card:hover .collab-img{
-  transform: scale(1.06);
+  transform: scale(1.02);
 }
 
 
