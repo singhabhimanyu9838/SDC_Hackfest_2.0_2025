@@ -265,3 +265,279 @@
 }
 
 
+
+
+/* ===================================================
+      CODEATHON (Blue Neon Theme)
+=================================================== */
+/* Codeathon Glitch Title */
+/* ==========================================================
+   CODEATHON — MASTER ROW (3 cards in 1 row)
+   ========================================================== */
+
+.codeathon-row {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+
+/* ==========================================================
+   CODEATHON CARD BASE (blue cyber theme)
+   ========================================================== */
+
+.codeathon-card {
+  position: relative;
+  width: 305px;
+  height: 300px;
+  padding: 26px 20px;
+  border-radius: 18px;
+  background: rgba(10, 15, 25, 0.65);
+  border: 1px solid rgba(120, 220, 255, 0.18);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  text-align: center;
+
+  box-shadow:
+    0 10px 30px rgba(0, 120, 255, 0.35),
+    inset 0 0 12px rgba(0, 180, 255, 0.35);
+
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .codeathon-card {
+    width: 340px;   /* mobile width */
+    height: 310px;
+  }
+}
+
+/* Hover glow */
+.codeathon-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 15px 40px rgba(0, 180, 255, 0.55),
+    inset 0 0 18px rgba(0, 200, 255, 0.45);
+}
+
+
+/* ==========================================================
+   CODEATHON BLUE SPOTLIGHT
+   ========================================================== */
+
+.spotlight-blue1,
+.spotlight-blue2,
+.spotlight-blue3 {
+  position: absolute;
+  top: -130px;
+  left: 50%;
+  width: 200%;
+  height: 270px;
+
+  transform: translateX(-50%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 200, 255, 0.95) 0%,
+    rgba(0, 150, 255, 0.4) 30%,
+    rgba(0, 100, 200, 0.15) 60%,
+    transparent 100%
+  );
+
+  filter: blur(35px);
+  z-index: 0;
+  animation: spotlightPulse 2.5s infinite ease-in-out;
+}
+
+
+/* ==========================================================
+   BLUE OUTER RINGS
+   ========================================================== */
+
+.blue-ring1,
+.blue-ring2,
+.blue-ring3 {
+  position: absolute;
+  inset: -38px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 195, 255, 0.5);
+  animation: ringSpin 6s linear infinite;
+  z-index: 0;
+}
+
+
+/* ==========================================================
+   CODEATHON TEXT STYLE
+   ========================================================== */
+
+.code-blue {
+  color: #8ee8ff;
+  text-shadow: 0 0 8px #00c6ff;
+}
+
+.code-blue-text {
+  color: rgba(180, 240, 255, 0.8);
+}
+
+.metallic.blue1,
+.metallic.blue2,
+.metallic.blue3 {
+  background-image: linear-gradient(
+    90deg,
+    #8ee8ff,
+    #64d4ff,
+    #30b4ff,
+    #aef3ff
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: metallicShift 3s linear infinite;
+}
+
+
+/* ==========================================================
+   BLUE SPARKLES (BOTTOM TO TOP)
+   ========================================================== */
+
+.spark-blue {
+  position: absolute;
+  bottom: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #aef8ff, transparent);
+  opacity: 0;
+  animation: sparkleRiseBlue 3s linear infinite;
+}
+
+@keyframes sparkleRiseBlue {
+  0% { opacity: 0; transform: translateY(0) scale(.4); }
+  20% { opacity: .9; transform: translateY(-20px) scale(1); }
+  60% { opacity: .5; transform: translateY(-70px) scale(.8); }
+  100% { opacity: 0; transform: translateY(-140px) scale(.4); }
+}
+
+
+/* ==========================================================
+   FLOATING CODE ICONS
+   ========================================================== */
+
+.floating-icons {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  opacity: 0.15;
+}
+
+.float-icon {
+  font-size: 34px;
+  animation: floatIcon 4s infinite ease-in-out;
+}
+
+
+/* ==========================================================
+   PIXEL RAIN (MATRIX-STYLE)
+   ========================================================== */
+
+.pixel-rain {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.pixel-drop {
+  position: absolute;
+  width: 6px;
+  height: 14px;
+  background: linear-gradient(#6affff, transparent);
+  opacity: 0.7;
+  animation: pixelFall 1.3s linear infinite;
+  border-radius: 2px;
+}
+
+@keyframes pixelFall {
+  0% { transform: translateY(-20px); opacity: 0; }
+  40% { opacity: 1; }
+  100% { transform: translateY(260px); opacity: 0; }
+}
+
+
+/* auto random positions — 35 drops recommended */
+.pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
+.pixel-drop:nth-child(2) { left: 10%; animation-delay: .3s; }
+.pixel-drop:nth-child(3) { left: 15%; animation-delay: .6s; }
+.pixel-drop:nth-child(4) { left: 22%; animation-delay: .9s; }
+.pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
+.pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
+.pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }
+.pixel-drop:nth-child(8) { left: 5%; animation-delay: .1s; }
+.pixel-drop:nth-child(9) { left: 10%; animation-delay: .3s; }
+.pixel-drop:nth-child(10) { left: 15%; animation-delay: .6s; }
+.pixel-drop:nth-child(11) { left: 22%; animation-delay: .9s; }
+.pixel-drop:nth-child(12) { left: 30%; animation-delay: .2s; }
+.pixel-drop:nth-child(13) { left: 40%; animation-delay: .4s; }
+.pixel-drop:nth-child(14) { left: 48%; animation-delay: .7s; }.pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
+.pixel-drop:nth-child(15) { left: 10%; animation-delay: .3s; }
+.pixel-drop:nth-child(16) { left: 15%; animation-delay: .6s; }
+.pixel-drop:nth-child(4) { left: 22%; animation-delay: .9s; }
+.pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
+.pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
+.pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }.pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
+.pixel-drop:nth-child(2) { left: 10%; animation-delay: .3s; }
+.pixel-drop:nth-child(3) { left: 15%; animation-delay: .6s; }
+.pixel-drop:nth-child(4) { left: 22%; animation-delay: .9s; }
+.pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
+.pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
+.pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }.pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
+.pixel-drop:nth-child(2) { left: 10%; animation-delay: .3s; }
+.pixel-drop:nth-child(3) { left: 15%; animation-delay: .6s; }
+.pixel-drop:nth-child(4) { left: 22%; animation-delay: .9s; }
+.pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
+.pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
+.pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }.pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
+.pixel-drop:nth-child(2) { left: 10%; animation-delay: .3s; }
+.pixel-drop:nth-child(3) { left: 15%; animation-delay: .6s; }
+.pixel-drop:nth-child(4) { left: 22%; animation-delay: .9s; }
+.pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
+.pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
+.pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }.pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
+.pixel-drop:nth-child(2) { left: 10%; animation-delay: .3s; }
+.pixel-drop:nth-child(3) { left: 15%; animation-delay: .6s; }
+.pixel-drop:nth-child(4) { left: 22%; animation-delay: .9s; }
+.pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
+.pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
+.pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }
+/* continue same until 35 */
+
+.extra-line {
+  margin-top: 4px;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  color: #ffe8a6;
+  background: linear-gradient(
+      90deg,
+      rgba(255,255,255,0.2) 0%,
+      rgba(255,255,255,0.9) 50%,
+      rgba(255,255,255,0.2) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 3s infinite linear;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+.reward-icons {
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

@@ -70,7 +70,7 @@
 =/* =====================================
     ALUMNI SPONSOR GRID
 ===================================== */
-
+/* 
 .alumni-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -79,7 +79,7 @@
   margin-top: 30px;
 }
 
-/* Alumni Card */
+
 .alumni-card {
   background: rgba(0, 10, 20, 0.7);
   padding: 22px;
@@ -92,7 +92,7 @@
   transition: 0.3s ease;
 }
 
-/* Hover */
+
 .alumni-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 35px rgba(0, 255, 255, 0.4);
@@ -118,7 +118,6 @@
   margin-top: 6px;
 }
 
-/* LinkedIn Icon */
 .linkedin-wrap {
   display: inline-block;
   margin-top: 10px;
@@ -130,7 +129,7 @@
   transition: 0.3s ease;
 }
 
-/* Hover Glow */
+
 @media (hover: hover) {
   .linkedin-wrap:hover .linkedin-icon {
     color: #49d2ff;
@@ -139,14 +138,14 @@
   }
 }
 
-/* Tablet */
+
 @media (max-width: 992px) {
   .alumni-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
   .alumni-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -157,9 +156,7 @@
   }
 }
 
-/* ===============================
-   ALUMNI GRID → 4 + 3 centered
-=============================== */
+
 .alumni-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -169,7 +166,7 @@
   margin-top: 30px;
 }
 
-/* Alumni card styling */
+
 .alumni-card {
   background: rgba(0, 10, 20, 0.7);
   padding: 20px;
@@ -184,9 +181,8 @@
 .alumni-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 26px rgba(0, 255, 255, 0.45);
-}
-
-/* Image */
+} */
+/* 
 .alumni-img {
   width: 100%;
   height: 230px;
@@ -195,7 +191,7 @@
   margin-bottom: 12px;
 }
 
-/* Text */
+
 .alumni-card h4 {
   color: #ffffff;
   font-size: 18px;
@@ -209,7 +205,7 @@
   margin-bottom: 10px;
 }
 
-/* LinkedIn Icon */
+
 .linkedin-wrap {
   display: inline-block;
   margin-top: 5px;
@@ -226,28 +222,26 @@
   transform: scale(1.22);
 }
 
-/* Center last row of 3 alumni */
+
 .alumni-grid > :nth-last-child(-n+3):nth-child(n+5) {
   grid-column: span 1;
 }
 
-/* Tablet → 2 per row */
+
 @media (max-width: 992px) {
   .alumni-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile → 1 per row */
+
 @media (max-width: 576px) {
   .alumni-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-/* =============================
-   Alumni Grid → 4 items row
-============================= */
+
 .alumni-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -256,9 +250,7 @@
   margin-top: 30px;
 }
 
-/* =============================
-   Alumni Grid Center → 3 items center-aligned
-============================= */
+
 .alumni-grid-center {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -268,7 +260,7 @@
   margin-top: 30px;
 }
 
-/* Max width for card */
+
 .alumni-card {
   background: rgba(0, 10, 20, 0.6);
   padding: 20px;
@@ -280,7 +272,7 @@
   transition: 0.3s;
 }
 
-/* Image style */
+
 .alumni-img {
   width: 100%;
   height: 200px;
@@ -288,9 +280,7 @@
   border-radius: 12px;
 }
 
-/* =============================
-   Tablet → 2 cards per row
-============================= */
+
 @media (max-width: 992px) {
   .alumni-grid,
   .alumni-grid-center {
@@ -298,15 +288,13 @@
   }
 }
 
-/* =============================
-   Mobile → 1 card per row
-============================= */
+
 @media (max-width: 576px) {
   .alumni-grid,
   .alumni-grid-center {
     grid-template-columns: repeat(1, 1fr);
   }
-}
+} */
 
 
 .pirate-btn {
@@ -336,7 +324,7 @@
   display: inline-block;
 }
 
-/* Make sponsor rows centered */
+
 .sponsor-row {
   display: flex;
   justify-content: center;
@@ -344,7 +332,7 @@
   flex-wrap: wrap;
 }
 
-/* Ensure the <a> wraps properly and centers */
+
 .sponsor-link {
   display: flex;
   justify-content: center;
@@ -352,7 +340,7 @@
   text-decoration: none;
 }
 
-/* Make cards shrink correctly on small screens */
+
 @media (max-width: 600px) {
   .sponsor-card {
     width: 90%;
@@ -429,58 +417,309 @@
   }
 } */
 
-/* --- CLUBS SECTION --- */
-/* --- CLUBS SECTION --- */
-.club-row {
+
+
+
+/* =======================================
+   COLLABORATION GRID
+======================================= */
+.collab-grid {
+  margin-top: 35px;
   display: flex;
+  gap: 28px;
   justify-content: center;
-  gap: 30px;
-  margin-top: 25px;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
-.club-card {
-  padding: 18px 35px;
-  font-size: 50px;
-  font-weight: 700;
-  border-radius: 12px;
+
+/* =======================================
+   BASE CARD STYLE (SPONSOR STYLE)
+======================================= */
+.collab-card {
+  width: 260px;
+  height: 200px;
+
+  padding: 22px 18px;
+  border-radius: 18px;
+  background: rgba(25, 25, 35, 0.55);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   text-align: center;
-  background: rgba(0, 15, 25, 0.55);
   transition: 0.35s ease;
+  overflow: hidden;
+  position: relative;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.4),
+    inset 0 1px 2px rgba(255,255,255,0.12);
 }
 
-/* IEEE BLUE THEME */
-.club-ieee {
-  color: #349df4;
-  border: 2px solid rgba(55, 164, 211, 0.4);
-  box-shadow: 0 0 12px rgba(59, 146, 221, 0.3);
+/* Hover Glow */
+.collab-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  border-color: rgba(120,220,255,0.35);
+  box-shadow:
+    0 15px 35px rgba(0,150,255,0.4),
+    inset 0 1px 2px rgba(255,255,255,0.22);
 }
 
-.club-ieee:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 20px rgba(0, 200, 255, 0.8);
-  border-color: rgba(0, 140, 255, 0.9);
+
+/* =======================================
+   LOGO IMAGE
+======================================= */
+.collab-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+
+  transition: transform 0.4s ease;
 }
 
-/* INCUBATION CENTER PURPLE THEME */
-.club-incubation {
-  color: #e9e6e9;
-  border: 2px solid rgba(71, 64, 71, 0.4);
-  box-shadow: 0 0 12px rgba(255, 102, 255, 0.184);
+/* Hover zoom */
+.collab-card:hover .collab-img {
+  transform: scale(1.12);
 }
 
-.club-incubation:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 20px rgba(207, 200, 207, 0.8);
-  border-color: rgba(123, 120, 123, 0.9);
+
+/* =======================================
+   TEXT IN CARD
+======================================= */
+.collab-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #fff;
 }
 
-/* Mobile Responsive */
-@media (max-width: 576px) {
-  .club-card {
+.collab-card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 4px;
+}
+
+
+/* =======================================
+   SPECIAL NO-LOGO CARD STYLE
+======================================= */
+.no-logo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-logo h4 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.text-logo p {
+  font-size: 16px;
+  color: #9ddfff;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+
+/* =======================================
+   SHINY ANIMATION
+======================================= */
+.collab-card::before {
+  content: "";
+  position: absolute;
+  top: -140%;
+  left: -40%;
+  width: 200%;
+  height: 300%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.collab-card:hover::before {
+  opacity: 1;
+  animation: shineAnim 1.2s ease-out;
+}
+
+@keyframes shineAnim {
+  0% { transform: translateX(-80%) rotate(25deg); }
+  100% { transform: translateX(80%) rotate(25deg); }
+}
+
+
+/* =======================================
+   RESPONSIVE
+======================================= */
+@media (max-width: 500px) {
+  .collab-card {
     width: 100%;
-    max-width: 320px;
-    font-size: 18px;
-    padding: 14px 20px;
+    height: 180px;
   }
 }
+
+
+/* =======================================
+   COLLABORATION GRID
+======================================= */
+.collab-grid {
+  margin-top: 35px;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+/* =======================================
+   NEW SPONSOR-LIKE CARD STYLE
+======================================= */
+.collab-card {
+  width: 445px;
+  height: 190px;
+
+  background: rgba(0, 10, 20, 0.6);
+  border-radius: 15px;
+  padding: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect */
+.collab-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.4);
+}
+
+
+/* =======================================
+   LOGO IMAGE
+======================================= */
+.collab-img {
+  width: 275px;
+  height: 275px;
+  object-fit: contain;
+  transition: 0.4s ease;
+}
+
+/* Zoom on hover */
+.collab-card:hover .collab-img{
+  transform: scale(1.12);
+}
+
+
+/* =======================================
+   TEXT STYLING
+======================================= */
+.collab-card h2 {
+  color: #00eaff;
+  font-size: 35px;
+  margin-top: 10px;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+}
+
+.collab-card p {
+  color: #b8faff;
+  font-size: 14px;
+  margin-top: 4px;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+}
+
+
+/* =======================================
+   INCUBATION CENTER NO-LOGO STYLING
+======================================= */
+.no-logo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-logo h2 {
+  font-size: 35px;
+  font-weight: 800;
+  color: #dbdede;
+  text-shadow: 0 0 12px rgba(140, 143, 143, 0.4);
+}
+
+.text-logo p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #9beaff;
+  margin-top: 4px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+
+/* =======================================
+   SHINE ANIMATION
+======================================= */
+.collab-card::before {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: -50%;
+  width: 200%;
+  height: 300%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.collab-card:hover::before {
+  opacity: 1;
+  animation: shineMove 1s ease-out;
+}
+
+@keyframes shineMove {
+  from { transform: translateX(-80%) rotate(25deg); }
+  to { transform: translateX(80%) rotate(25deg); }
+}
+
+
+/* =======================================
+   RESPONSIVE
+======================================= */
+@media (max-width: 500px) {
+  .collab-card {
+    width: 90%;
+    height: 180px;
+  }
+}
+.collab-link-wrapper {
+  text-decoration: none;
+  display: inline-block;
+}
+

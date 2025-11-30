@@ -15,7 +15,7 @@ const Schedule = () => {
         className="schedule"
       />
       <img
-        src="/assets/img/new_assets/Schedule.svg"
+        src="/assets/img/new_assets/Schedule-01.svg"
         alt="schedule"
         className="schedule-laptop"
       />
