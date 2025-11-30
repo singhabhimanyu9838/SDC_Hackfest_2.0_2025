@@ -67,7 +67,7 @@ const About = () => {
                 colors="primary:#45b6b6,secondary:#45b6b6"
                 style={{ width: "80px", height: "80px" }}
               />
-              <div className="counting">100+</div>
+              <div className="counting">150+</div>
               <h5 className="clr-dark">Registrations</h5>
             </div>
 
@@ -78,7 +78,7 @@ const About = () => {
                 colors="primary:#45b6b6,secondary:#45b6b6"
                 style={{ width: "80px", height: "80px" }}
               />
-              <div className="counting">325+</div>
+              <div className="counting">525+</div>
               <h5 className="clr-dark">Attendees</h5>
             </div>
 
@@ -89,7 +89,7 @@ const About = () => {
                 colors="primary:#45b6b6,secondary:#45b6b6"
                 style={{ width: "80px", height: "80px" }}
               />
-              <div className="counting">1</div>
+              <div className="counting">2</div>
               <h5 className="clr-dark">Colleges</h5>
             </div>
 

@@ -368,3 +368,119 @@
   transform: translateY(-6px);
   box-shadow: 0 0 25px rgba(0,255,255,0.4);
 }
+
+
+/* =========================================================
+   CLUB COLLABORATION SECTION
+========================================================= */
+/* 
+.collab-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.collab-card-link {
+  text-decoration: none;
+}
+
+.collab-card {
+  background: rgba(0, 10, 20, 0.6);
+  border-radius: 14px;
+  padding: 25px 20px;
+  width: 260px;
+  text-align: center;
+  border: 1px solid rgba(0, 255, 255, 0.18);
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.2);
+  transition: 0.3s ease;
+}
+
+.collab-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.45);
+}
+
+.collab-img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.3));
+}
+
+.collab-card h4 {
+  color: #00eaff;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.collab-card p {
+  color: #b7eaff;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 576px) {
+  .collab-card {
+    width: 90%;
+  }
+} */
+
+/* --- CLUBS SECTION --- */
+/* --- CLUBS SECTION --- */
+.club-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.club-card {
+  padding: 18px 35px;
+  font-size: 50px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-align: center;
+  background: rgba(0, 15, 25, 0.55);
+  transition: 0.35s ease;
+}
+
+/* IEEE BLUE THEME */
+.club-ieee {
+  color: #349df4;
+  border: 2px solid rgba(55, 164, 211, 0.4);
+  box-shadow: 0 0 12px rgba(59, 146, 221, 0.3);
+}
+
+.club-ieee:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.8);
+  border-color: rgba(0, 140, 255, 0.9);
+}
+
+/* INCUBATION CENTER PURPLE THEME */
+.club-incubation {
+  color: #e9e6e9;
+  border: 2px solid rgba(71, 64, 71, 0.4);
+  box-shadow: 0 0 12px rgba(255, 102, 255, 0.184);
+}
+
+.club-incubation:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(207, 200, 207, 0.8);
+  border-color: rgba(123, 120, 123, 0.9);
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .club-card {
+    width: 100%;
+    max-width: 320px;
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+}

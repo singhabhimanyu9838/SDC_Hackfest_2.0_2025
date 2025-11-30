@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1866 1724">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3 {
+        fill: #fff;
+      }
+
+      .st0, .st2, .st4, .st5 {
+        font-family: ArialRoundedMTBold, 'Arial Rounded MT Bold';
+      }
+
+      .st0, .st3 {
+        font-size: 48px;
+      }
+
+      .st6, .st7 {
+        fill: none;
+      }
+
+      .st2, .st4, .st5 {
+        font-size: 36px;
+      }
+
+      .st8 {
+        fill: url(#radial-gradient);
+      }
+
+      .st9 {
+        fill: url(#radial-gradient5);
+      }
+
+      .st10 {
+        fill: url(#radial-gradient1);
+      }
+
+      .st5 {
+        fill: #231f20;
+      }
+
+      .st11 {
+        fill: url(#radial-gradient7);
+      }
+
+      .st3 {
+        font-family: PiecesofEight, 'Pieces of Eight';
+      }
+
+      .st12 {
+        fill: url(#radial-gradient8);
+      }
+
+      .st7 {
+        stroke: #ae6047;
+        stroke-dasharray: 14.4 14.4;
+        stroke-linecap: round;
+        stroke-width: 7.2px;
+      }
+
+      .st13 {
+        fill: url(#radial-gradient6);
+      }
+
+      .st14 {
+        fill: url(#radial-gradient2);
+      }
+
+      .st15 {
+        fill: url(#radial-gradient4);
+      }
+
+      .st16 {
+        fill: url(#radial-gradient3);
+      }
+
+      .st17 {
+        fill: url(#radial-gradient9);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="-31.4" cy="1402.4" fx="-31.4" fy="1402.4" r="1" gradientTransform="translate(-82565.6 1658.4) rotate(90.2) scale(59.5 -59.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#106d75"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient1" cx="-31.4" cy="1402.4" fx="-31.4" fy="1402.4" r="1" gradientTransform="translate(-82101.2 1654.8) rotate(90.2) scale(59.5 -59.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#106d75"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient2" cx="-31.4" cy="1402.4" fx="-31.4" fy="1402.4" r="1" gradientTransform="translate(-81784.9 1883.4) rotate(90.2) scale(59.5 -59.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#106d75"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient3" cx="-31.4" cy="1402.4" fx="-31.4" fy="1402.4" r="1" gradientTransform="translate(-82761.6 2092.6) rotate(90.2) scale(59.5 -59.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#106d75"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient4" cx="-31.4" cy="1402.4" fx="-31.4" fy="1402.4" r="1" gradientTransform="translate(-82762.3 2487.9) rotate(90.2) scale(59.5 -59.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#106d75"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient5" cx="-31.4" cy="1402.4" fx="-31.4" fy="1402.4" r="1" gradientTransform="translate(-82141.3 3051.6) rotate(90.2) scale(59.5 -59.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#106d75"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient6" cx="-31.4" cy="1402.4" fx="-31.4" fy="1402.4" r="1" gradientTransform="translate(-82003.3 2092.2) rotate(90.2) scale(59.5 -59.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#106d75"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient7" cx="-31.4" cy="1402.4" fx="-31.4" fy="1402.4" r="1" gradientTransform="translate(-81989.2 2487.3) rotate(90.2) scale(59.5 -59.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#106d75"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient8" cx="-31.4" cy="1402.4" fx="-31.4" fy="1402.4" r="1" gradientTransform="translate(-81784.8 2806.8) rotate(90.2) scale(59.5 -59.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#106d75"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient9" cx="-28.3" cy="1397.8" fx="-28.3" fy="1397.8" r="1" gradientTransform="translate(-82761.6 2092.6) rotate(90.2) scale(59.5 -59.5)" xlink:href="#radial-gradient"/>
+    <image id="image" width="512" height="512" xlink:href="C:\Users\nitin\Downloads\EmojiBlitzCaptainJackSparrow1.webp"/>
+  </defs>
+  <path class="st7" d="M397.5,144.5s630.8,4.7,1271.1,7.4"/>
+  <path class="st7" d="M416.3,591.8h1248"/>
+  <path class="st7" d="M419.5,982.8h1250.1"/>
+  <path class="st7" d="M954,1546h702"/>
+  <path class="st7" d="M1671.7,164.9v414.7"/>
+  <path class="st7" d="M416.3,605.5v364.3"/>
+  <path class="st7" d="M1671.2,995.4v544.5"/>
+  <path class="st8" d="M890.8,96.3h0c29.2,0,52.8,23.6,52.8,52.8h0c0,29.2-23.6,52.8-52.8,52.8h0c-29.2,0-52.8-23.6-52.8-52.8h0c0-29.2,23.6-52.8,52.8-52.8Z"/>
+  <rect class="st6" x="847.3" y="119.9" width="87" height="57.8"/>
+  <path class="st1" d="M694.7,530.5h0c29.2,0,52.8,23.6,52.8,52.8h0c0,29.2-23.6,52.8-52.8,52.8h0c-29.2,0-52.8-23.6-52.8-52.8h0c0-29.2,23.6-52.8,52.8-52.8Z"/>
+  <rect class="st6" x="651.2" y="554.1" width="87" height="57.8"/>
+  <path class="st10" d="M1355.2,92.7h0c29.2,0,52.8,23.6,52.8,52.8h0c0,29.2-23.6,52.8-52.8,52.8h0c-29.2,0-52.8-23.6-52.8-52.8h0c0-29.2,23.6-52.8,52.8-52.8Z"/>
+  <rect class="st6" x="1311.7" y="116.3" width="87" height="57.8"/>
+  <path class="st14" d="M1671.4,321.3h0c29.2,0,52.8,23.6,52.8,52.8h0c0,29.2-23.6,52.8-52.8,52.8h0c-29.2,0-52.8-23.6-52.8-52.8h0c0-29.2,23.6-52.8,52.8-52.8Z"/>
+  <rect class="st6" x="1627.9" y="344.9" width="87" height="57.8"/>
+  <path class="st16" d="M694.7,530.5h0c29.2,0,52.8,23.6,52.8,52.8h0c0,29.2-23.6,52.8-52.8,52.8h0c-29.2,0-52.8-23.6-52.8-52.8h0c0-29.2,23.6-52.8,52.8-52.8Z"/>
+  <rect class="st6" x="651.2" y="554.1" width="87" height="57.8"/>
+  <rect class="st6" x="372.4" y="765.2" width="87" height="57.8"/>
+  <path class="st15" d="M694,925.7h0c29.2,0,52.8,23.6,52.8,52.8h0c0,29.2-23.6,52.8-52.8,52.8h0c-29.2,0-52.8-23.6-52.8-52.8h0c0-29.2,23.6-52.8,52.8-52.8Z"/>
+  <rect class="st6" x="650.5" y="949.4" width="87" height="57.8"/>
+  <rect class="st6" x="1037" y="953.7" width="87" height="57.8"/>
+  <path class="st9" d="M1315,1489.5h0c29.2,0,52.8,23.6,52.8,52.8h0c0,29.2-23.6,52.8-52.8,52.8h0c-29.2,0-52.8-23.6-52.8-52.8h0c0-29.2,23.6-52.8,52.8-52.8Z"/>
+  <rect class="st6" x="1271.5" y="1513.1" width="87" height="57.8"/>
+  <path class="st13" d="M1453.1,530.1h0c29.2,0,52.8,23.6,52.8,52.8h0c0,29.2-23.6,52.8-52.8,52.8h0c-29.2,0-52.8-23.6-52.8-52.8h0c0-29.2,23.6-52.8,52.8-52.8Z"/>
+  <rect class="st6" x="1409.6" y="553.7" width="87" height="57.8"/>
+  <path class="st11" d="M1467.1,925.2h0c29.2,0,52.8,23.6,52.8,52.8h0c0,29.2-23.6,52.8-52.8,52.8h0c-29.2,0-52.8-23.6-52.8-52.8h0c0-29.2,23.6-52.8,52.8-52.8Z"/>
+  <rect class="st6" x="1423.6" y="948.8" width="87" height="57.8"/>
+  <path class="st12" d="M1671.6,1244.7h0c29.2,0,52.8,23.6,52.8,52.8h0c0,29.2-23.6,52.8-52.8,52.8h0c-29.2,0-52.8-23.6-52.8-52.8h0c0-29.2,23.6-52.8,52.8-52.8Z"/>
+  <rect class="st6" x="1628.1" y="1268.3" width="87" height="57.8"/>
+  <text class="st5" transform="translate(730.4 234.9)"><tspan x="0" y="0">9:30 AM - 10:30 AM</tspan></text>
+  <text class="st3" transform="translate(837.9 87)"><tspan x="0" y="0">DAY 1</tspan></text>
+  <text class="st2" transform="translate(754.4 264.8)"><tspan x="0" y="0">INAUGURATION</tspan></text>
+  <text class="st4" transform="translate(1184 234.9)"><tspan x="0" y="0">11:00 AM - 1:00 PM</tspan></text>
+  <text class="st2" transform="translate(1339.1 415.6)"><tspan x="0" y="0">CODEATHON</tspan></text>
+  <text class="st4" transform="translate(1302.8 374.6)"><tspan x="0" y="0">2:00 PM - 4:00 PM</tspan></text>
+  <text class="st4" transform="translate(1321.2 666.8)"><tspan x="0" y="0">4:30 PM - 5:00 PM</tspan></text>
+  <text class="st2" transform="translate(1364.4 707)"><tspan x="0" y="0">PPT RESULT</tspan></text>
+  <path class="st17" d="M418.7,712.4h0c29.2,0,52.8,23.6,52.8,52.8h0c0,29.2-23.6,52.8-52.8,52.8h0c-29.2,0-52.8-23.6-52.8-52.8h0c0-29.2,23.6-52.8,52.8-52.8Z"/>
+  <text class="st3" transform="translate(641.2 691.2)"><tspan x="0" y="0">DAY 2 </tspan></text>
+  <text class="st2" transform="translate(512.6 818)"><tspan x="0" y="0">HACKATHON</tspan></text>
+  <text class="st2" transform="translate(1413.5 1121.8)"><tspan x="0" y="0">LUNCH</tspan></text>
+  <text class="st2" transform="translate(533.8 1108.4)"><tspan x="0" y="0">MENTOR ROUND</tspan></text>
+  <text class="st2" transform="translate(1225.8 1350.3)"><tspan x="0" y="0">FINAL PRESENTATION</tspan></text>
+  <text class="st2" transform="translate(1141 1677.6)"><tspan x="0" y="0">PRIZE DISTRIBUTION</tspan></text>
+  <text class="st4" transform="translate(475.3 774.2)"><tspan x="0" y="0">8:00 AM - 3:00 PM</tspan></text>
+  <text class="st4" transform="translate(1321.7 1080.9)"><tspan x="0" y="0">1:00 PM - 2:00 PM</tspan></text>
+  <text class="st4" transform="translate(515.5 1065.8)"><tspan x="0" y="0">12:00 PM - 1:00 PM</tspan></text>
+  <text class="st4" transform="translate(1293.8 1312.1)"><tspan x="0" y="0">3:30 PM - 5:30 PM</tspan></text>
+  <text class="st4" transform="translate(1177.8 1628.4)"><tspan x="0" y="0">6:00 PM - 7:30 PM</tspan></text>
+  <use transform="translate(851.1 104) scale(.2)" xlink:href="#image"/>
+  <use transform="translate(1315.5 105) scale(.2)" xlink:href="#image"/>
+  <use transform="translate(654.9 541.1) scale(.2)" xlink:href="#image"/>
+  <use transform="translate(1413.5 539.1) scale(.2)" xlink:href="#image"/>
+  <use transform="translate(1632.1 333.3) scale(.2)" xlink:href="#image"/>
+  <use transform="translate(375.9 724.7) scale(.2)" xlink:href="#image"/>
+  <use transform="translate(655.5 936.2) scale(.2)" xlink:href="#image"/>
+  <use transform="translate(1428.1 936.1) scale(.2)" xlink:href="#image"/>
+  <use transform="translate(1632.1 1257) scale(.2)" xlink:href="#image"/>
+  <use transform="translate(1275.4 1499.4) scale(.2)" xlink:href="#image"/>
+  <image width="484" height="468" transform="translate(748.2 1411.1) scale(.5 .5)" xlink:href="C:\Users\nitin\Downloads\dead_pirate_smiley_by_mondspeer-d7cc9rb.png"/>
+  <image width="2000" height="2000" transform="translate(295.5 -12.8) scale(.1 .1)" xlink:href="C:\Users\nitin\Downloads\—Pngtree—yellow arrow wooden illustration_4566801.png"/>
+  <text/>
+  <text class="st2" transform="translate(1266 265.2)"><tspan x="0" y="0">ROUND 1</tspan><tspan x="-54.8" y="32">IDEA PITCHING</tspan></text>
+  <text class="st0" transform="translate(335 96.3)"><tspan x="0" y="0">START</tspan></text>
+</svg>

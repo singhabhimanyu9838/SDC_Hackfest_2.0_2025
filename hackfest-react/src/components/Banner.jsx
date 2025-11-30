@@ -45,7 +45,7 @@ const Banner = () => {
           >
             <button className="button-register banner-button-style">
               <i className="fa-solid fa-up-right-from-square" />
-              &nbsp;Apply for Hackathon
+              &nbsp;Hackathon via namespace
             </button>
           </a>
           <a href="" target="_blank" rel="noreferrer">

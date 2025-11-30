@@ -11,9 +11,24 @@ const Sponsors = () => {
   ];
 
   const row2 = [
-    { img: "/assets/img/sponsors/spon7.png", url: "https://company4.com" },
+    // { img: "/assets/img/sponsors/spon7.png", url: "https://company4.com" },
     { img: "/assets/img/sponsors/spon6.jpg", url: "https://ezsync.in/" },
   ];
+
+  // const collabClubs = [
+  //   {
+  //     name: "Tech Minds Club",
+  //     desc: "Innovation • Coding • Robotics",
+  //     img: "/assets/img/sponsors/club1.png",
+  //     url: "https://exampleclub1.com",
+  //   },
+  //   {
+  //     name: "Creative Coders Club",
+  //     desc: "Design • Dev • Community",
+  //     img: "/assets/img/sponsors/club2.png",
+  //     url: "https://exampleclub2.com",
+  //   },
+  // ];
 
   // ⭐ ALUMNI SPONSORS (8 Members → 4 + 4)
   const alumniSponsors = [
@@ -72,15 +87,16 @@ const Sponsors = () => {
             </a>
           ))}
         </div>
+        
 
-        {/* ⭐ ALUMNI SPONSORS TITLE */}
+{/*       
         <div className="section_title" style={{ marginTop: 60 }}>
           <h3 className="title-dark" data-aos="fade-right">
             Alumni Sponsors
           </h3>
         </div>
 
-        {/* ⭐ Alumni Row 1 → 4 Cards */}
+      
         <div className="alumni-grid">
           {alumniSponsors.slice(0, 4).map((a, i) => (
             <a
@@ -100,7 +116,7 @@ const Sponsors = () => {
           ))}
         </div>
 
-        {/* ⭐ Alumni Row 2 → 4 Cards (Centered) */}
+       
         <div className="alumni-grid-center">
           {alumniSponsors.slice(4).map((a, i) => (
             <a
@@ -118,7 +134,8 @@ const Sponsors = () => {
               </div>
             </a>
           ))}
-        </div>
+        </div> */}
+
 
         {/* ⭐ BUTTON */}
         <div className="text-center custom-btn-wrapper">
@@ -131,6 +148,37 @@ const Sponsors = () => {
             Sponsor Us ⚔️
           </a>
         </div>
+
+
+          {/* <div className="section_title" style={{ marginTop: 60 }}>
+          <h3 className="title-dark" data-aos="fade-right">In Collaborations with</h3>
+        </div> */}
+
+        {/* <div className="collab-grid" data-aos="fade-up">
+          {collabClubs.map((club, i) => (
+            <a key={i} href={club.url} target="_blank" rel="noreferrer" className="collab-card-link">
+              <div className="collab-card">
+                <img src={club.img} alt={club.name} className="collab-img" />
+                <h4>{club.name}</h4>
+                <p>{club.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div> */}
+
+        {/* ⭐ COLLABORATION CLUBS SECTION */}
+<div className="section_title" style={{ marginTop: 60 }}>
+  <h3 className="title-dark" data-aos="fade-right">
+    Collaboration With
+  </h3>
+</div>
+
+<div className="club-row">
+  <div className="club-card club-ieee">IEEE</div>
+  <div className="club-card club-incubation">INCUBATION CENTER</div>
+</div>
+
+
 
       </div>
     </section>
