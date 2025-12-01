@@ -7,13 +7,20 @@ const Sponsors = () => {
   const row1 = [
     { img: "/assets/img/sponsors/spon2.jpg", url: "https://www.matiks.in/" },
     { img: "/assets/img/sponsors/spon3.jpg", url: "https://bilvaleaf.com/" },
-    {
+     {
       img: "/assets/img/sponsors/spon4.jpg",
       url: "https://www.namespace.world/",
     },
+    {
+      img: "/assets/img/sponsors/secondb.jpg",
+      url: "https://www.secondbrainapp.in/",
+    },
+    
   ];
 
-  const row2 = [];
+  const row2 = [
+    
+  ];
 
   const collabClubs = [
     {

@@ -41,7 +41,7 @@ const Banner = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.namespace.world/events/c547d445-fa63-4eff-bda6-80a6404254fe"
+            href="https://www.namespace.world/events/JKA9EV"
           >
             <button className="button-register banner-button-style">
               <i className="fa-solid fa-up-right-from-square" />

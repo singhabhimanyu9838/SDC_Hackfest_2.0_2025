@@ -318,7 +318,7 @@
 }
 @media (max-width: 768px) {
   .codeathon-card {
-    width: 340px;   /* mobile width */
+    width: 92%;   /* mobile width */
     height: 310px;
   }
 }
