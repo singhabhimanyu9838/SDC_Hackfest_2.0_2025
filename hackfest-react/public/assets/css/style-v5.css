@@ -2459,7 +2459,7 @@ lord-icon {
     }
 
     .progress {
-        top: 11.5rem !important;
+        top: 10.5rem !important;
     }
 
     #mlh-trust-badge {
@@ -2470,7 +2470,7 @@ lord-icon {
 @media (min-width: 991px) and (max-width:1309px) {
 
     .progress {
-        top: 12.2rem !important;
+        top: 9.7rem !important;
     }
 
 
@@ -2479,7 +2479,7 @@ lord-icon {
 @media (min-width: 1200px) and (max-width:1341px) {
 
     .progress {
-        top: 11.5rem !important;
+        top: 8.5rem !important;
     }
 
 
@@ -2488,7 +2488,7 @@ lord-icon {
 @media (min-width: 700px) and (max-width:768px) {
 
     .progress {
-        top: 14.9vw !important;
+        top: 11vw !important;
     }
 
 
@@ -2497,7 +2497,7 @@ lord-icon {
 @media (min-width: 600px) and (max-width:700px) {
 
     .progress {
-        top: 15.9vw !important;
+        top: 12.5vw !important;
     }
 
 
@@ -2506,7 +2506,7 @@ lord-icon {
 @media (min-width: 550px) and (max-width:600px) {
 
     .progress {
-        top: 17.5vw !important;
+        top: 14.5vw !important;
     }
 
 
@@ -2515,7 +2515,7 @@ lord-icon {
 @media (min-width: 300px) and (max-width:550px) {
 
     .progress {
-        top: 17.6vw !important;
+        top: 16.3vw !important;
     }
 
     .button-register {
