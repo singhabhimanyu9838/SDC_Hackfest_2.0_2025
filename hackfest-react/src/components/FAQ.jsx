@@ -8,7 +8,7 @@ const faqData = [
   },
   {
     q: "How big a team can be?",
-    a: "The minimum team size is 2 and the maximum team size is 4."
+    a: "The minimum team size is 3 and the maximum team size is 5."
   },
   {
     q: "Who all can participate?",
@@ -20,7 +20,7 @@ const faqData = [
   },
   {
     q: "I'm not from REC Banda. Can I participate?",
-    a: "Sorry, participation is restricted to REC Banda students only."
+    a: "Yes , you can participate."
   },
   {
     q: "I am a newbie, can I hack?",
