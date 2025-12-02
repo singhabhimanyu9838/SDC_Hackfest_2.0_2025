@@ -25,22 +25,21 @@ const Success = () => {
             ⭐ WhatsApp Group Join Box
         ============================== */}
 
-          <a href="https://chat.whatsapp.com/KT21RMGAb5r9y4M6B5nr3y"
-            target="_blank"
-            rel="noreferrer">
+          <div className="gfg-whatsapp-box" data-aos="zoom-in">
+                <span className="wa-title">
+                  Join the Official Codeathon WhatsApp Group
+                </span>
 
-              <div className="success-whatsapp-box" data-aos="fade-up">
-          Join the official Codeathon WhatsApp group →{" "}
-          <a 
-            href="https://chat.whatsapp.com/KT21RMGAb5r9y4M6B5nr3y"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Click to Join
-          </a>
-        </div>
-
-            </a>
+                <a
+                  href="https://chat.whatsapp.com/KT21RMGAb5r9y4M6B5nr3y"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="wa-join-now-btn"
+                >
+                  <i className="fa-brands fa-whatsapp"></i>
+                  &nbsp; Join Now
+                </a>
+              </div>
 
         
 

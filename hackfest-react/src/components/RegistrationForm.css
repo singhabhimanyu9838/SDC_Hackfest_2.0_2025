@@ -55,36 +55,86 @@
 /* =========================================================
    ⭐ WHATSAPP GROUP BOX — BLUE HIGHLIGHT
    ========================================================= */
+/* ================================
+   WHATSAPP JOIN BOX (Premium Style)
+================================ */
+
 .gfg-whatsapp-box {
-  width: 70%;
-  margin: 0 auto 25px;
-  padding: 18px 22px;
-  text-align: center;
-  
-  background: rgba(0, 60, 100, 0.35);
-  border: 2px solid #29d2ff;
-  border-radius: 14px;
-  backdrop-filter: blur(10px);
+  width: 100%;
+  margin: 0 auto 30px;
+  padding: 28px 25px;
 
-  color: #dff7ff;
-  font-size: 1.15rem;
+  background: linear-gradient(135deg, rgba(0, 40, 80, 0.65), rgba(0, 90, 150, 0.5));
+  border: 3px solid #29d2ff;
+  border-radius: 20px;
+
+  color: #e9faff;
+  font-size: 1.35rem;
   font-weight: 600;
+  text-align: center;
 
-  box-shadow: 0 0 22px rgba(0, 200, 255, 0.45);
-  animation: bluePulse 2.4s infinite ease-in-out;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  box-shadow:
+    0 0 35px rgba(0, 225, 255, 0.55),
+    inset 0 0 20px rgba(0, 180, 255, 0.25);
+
+  animation: blueGlowPulse 2.7s infinite ease-in-out;
 }
 
-@keyframes bluePulse {
-  0% { box-shadow: 0 0 14px rgba(0, 200, 255, 0.4); }
-  50% { box-shadow: 0 0 28px rgba(0, 200, 255, 0.9); }
-  100% { box-shadow: 0 0 14px rgba(0, 200, 255, 0.4); }
+
+.gfg-whatsapp-box span{
+      padding: 0 15px;
 }
 
-.gfg-whatsapp-box a {
-  color: #7feaff;
+
+/* JOIN NOW BUTTON (Bigger + clearer) */
+.wa-join-now-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 28px;
+
+  background: #00ff90;
+  color: #003314;
+  font-size: 1.2rem;
   font-weight: 800;
-  text-decoration: underline;
+
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.25s ease;
+
+  box-shadow: 0 0 15px rgba(0, 255, 140, 0.6);
 }
+
+/* Hover effect */
+.wa-join-now-btn:hover {
+  background: #00ffaa;
+  color: #001f0b;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 140, 0.9);
+}
+
+/* WhatsApp Icon */
+.wa-join-now-btn i {
+  font-size: 1.3rem;
+}
+
+/* Mobile optimization */
+@media (max-width: 480px) {
+  .gfg-whatsapp-box {
+    width: 95%;
+    padding: 22px 18px;
+    font-size: 1.2rem;
+  }
+
+  .wa-join-now-btn {
+    width: 90%;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+}
+
 
 .gfg-sponsor-banner img {
   width: 230px;
@@ -94,7 +144,8 @@
 
 .gfg-required-msg {
   text-align: center;
-  color: #ffdede;
+  color: #ffffff;
+  
   margin-top: -6px;
   margin-bottom: 25px;
   font-size: 1.05rem;

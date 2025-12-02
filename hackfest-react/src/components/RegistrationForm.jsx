@@ -97,7 +97,11 @@ const RegistrationForm = () => {
           </p>
         </div>
 
-        <div className="reg-center" data-aos="zoom-in-up" data-aos-duration="800">
+        <div
+          className="reg-center"
+          data-aos="zoom-in-up"
+          data-aos-duration="800"
+        >
           <div className="storm-card">
             <div className="storm-card-header">
               <h4>Register Now</h4>
@@ -190,26 +194,21 @@ const RegistrationForm = () => {
                 </select>
               </div>
 
-              <a
-                href="https://chat.whatsapp.com/KT21RMGAb5r9y4M6B5nr3y"
-                target="_blank"
-                rel="noreferrer"
-                className="wa-join-btn"
-              >
-                <div className="gfg-whatsapp-box" data-aos="zoom-in">
-                  <span className="wa-title">
-                    Join the Official Codeathon WhatsApp Group
-                  </span>
-                  <a
-                    href="https://chat.whatsapp.com/KT21RMGAb5r9y4M6B5nr3y"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="wa-join-btn"
-                  >
-                    Join Now
-                  </a>
-                </div>
-              </a>
+              <div className="gfg-whatsapp-box" data-aos="zoom-in">
+                <span className="wa-title">
+                  Join the Official Codeathon WhatsApp Group
+                </span>
+
+                <a
+                  href="https://chat.whatsapp.com/KT21RMGAb5r9y4M6B5nr3y"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="wa-join-now-btn"
+                >
+                  <i className="fa-brands fa-whatsapp"></i>
+                  &nbsp; Join Now
+                </a>
+              </div>
 
               <p className="gfg-required-msg">
                 ⚠ Joining the WhatsApp group is <strong>COMPULSORY</strong> for
