@@ -104,117 +104,70 @@ const Prizes = () => {
         </div>
       </div>
 
-      {/* ------------------------------------
-                CODEATHON PRIZES (1 Row)
-      ------------------------------------ */}
-      <div className="container">
-        <div className="codeathon-row">
+    {/* =====================================
+      GFG CODEATHON PRIZES – SINGLE CARD
+===================================== */}
+<div className="container">
+  <div className="codeathon-row gfg-one-row">
 
-          {/* ⭐ 1st Prize */}
-          <div className="codeathon-card reveal-card">
-            <div className="spotlight-blue1"></div>
-            <div className="outer-ring blue-ring1"></div>
+    <div className="codeathon-card gfg-card reveal-card">
+      
 
-            {/* Floating Icons */}
-            <div className="floating-icons">
-              <FaCode className="float-icon" />
-              <FaTerminal className="float-icon" />
-              <FaLaptopCode className="float-icon" />
-            </div>
+      {/* Spotlight + Ring */}
+      <div className="spotlight-gfg"></div>
+      <div className="outer-ring gfg-ring"></div>
 
-            {/* Pixel Rain */}
-            <div className="pixel-rain">
-              {pixels.map((_, i) => (
-                <div key={i} className="pixel-drop"></div>
-              ))}
-            </div>
-
-            <div className="prize-crown">
-              <img src="/assets/img/first.png" alt="1st" />
-            </div>
-
-            <h4 className="prize-title code-blue">First Prize</h4>
-            <div className="prize-amount metallic blue1">₹ 1,000</div>
-            <p className="prize-tagline code-blue-text">Worth Reward</p>
-            <p className="extra-line">Medal<span className="medal-emoji">🎖️</span> & Certificate  <span className="certificate-emoji">📜</span> Included</p>
-            
-
-            <div className="card-visuals">
-              {sparks.map((_, i) => (
-                <div key={i} className="spark-blue"></div>
-              ))}
-            </div>
-          </div>
-
-          {/* ⭐ 2nd Prize */}
-          <div className="codeathon-card reveal-card">
-            <div className="spotlight-blue2"></div>
-            <div className="outer-ring blue-ring2"></div>
-
-            <div className="floating-icons">
-              <FaCode className="float-icon" />
-              <FaTerminal className="float-icon" />
-            </div>
-
-            <div className="pixel-rain">
-              {pixels.map((_, i) => (
-                <div key={i} className="pixel-drop"></div>
-              ))}
-            </div>
-
-            <div className="prize-crown">
-              <img src="/assets/img/second.png" alt="2nd" />
-            </div>
-
-            <h4 className="prize-title code-blue">Second Prize</h4>
-            <div className="prize-amount metallic blue2">₹ 600</div>
-            <p className="prize-tagline code-blue-text">Worth Reward</p>
-           <p className="extra-line">Medal<span className="medal-emoji">🎖️</span> & Certificate  <span className="certificate-emoji">📜</span> Included</p>
-
-            
-
-            <div className="card-visuals">
-              {sparks.map((_, i) => (
-                <div key={i} className="spark-blue"></div>
-              ))}
-            </div>
-          </div>
-
-          {/* ⭐ 3rd Prize */}
-          <div className="codeathon-card reveal-card">
-            <div className="spotlight-blue3"></div>
-            <div className="outer-ring blue-ring3"></div>
-
-            <div className="floating-icons">
-              <FaLaptopCode className="float-icon" />
-              <FaTerminal className="float-icon" />
-            </div>
-
-            <div className="pixel-rain">
-              {pixels.map((_, i) => (
-                <div key={i} className="pixel-drop"></div>
-              ))}
-            </div>
-
-            <div className="prize-crown">
-              <img src="/assets/img/third.png" alt="3rd" />
-            </div>
-
-            <h4 className="prize-title code-blue">Third Prize</h4>
-            <div className="prize-amount metallic blue3">₹ 400</div>
-            <p className="prize-tagline code-blue-text">Worth Reward</p>
-            <p className="extra-line">Medal<span className="medal-emoji">🎖️</span> & Certificate  <span className="certificate-emoji">📜</span> Included</p>
-
-
-            <div className="card-visuals">
-              {sparks.map((_, i) => (
-                <div key={i} className="spark-blue"></div>
-              ))}
-            </div>
-          </div>
-
-        </div>
+      {/* Floating Icons */}
+      <div className="floating-icons">
+        <FaCode className="float-icon" />
+        <FaTerminal className="float-icon" />
+        <FaLaptopCode className="float-icon" />
       </div>
+
+      {/* Pixel Rain */}
+      <div className="pixel-rain">
+        {pixels.map((_, i) => (
+          <div key={i} className="pixel-drop gfg-drop"></div>
+        ))}
+      </div>
+
+      {/* GFG Goodies Image */}
+      <div className="gfg-img-box">
+        <img src="/assets/img/sponsors/preorder-bag_1713852216.png" alt="GFG Goodies" className="gfg-goodies-img" />
+        <img src="/assets/img/sponsors/preorder-tshirt_1713852170.png" alt="GFG Goodies" className="gfg-goodies-img" />
+      </div>
+      
+
+      {/* Heading */}
+      <h3 className="gfg-title">GFG Codeathon Rewards</h3>
+
+      {/* Main Reward */}
+      <p className="gfg-main-reward">
+        🎁 Top 5 Performers Get Exclusive GFG Goodies (T-Shirt + Bag)
+      </p>
+
+      {/* Coupon for all */}
+      <p className="gfg-coupon">
+        🎫 All Participants Receive <strong>GFG Premium Access Coupon</strong>
+      </p>
+
+      {/* Medal + Certificate */}
+      <p className="extra-line">
+        Medal <span className="medal-emoji">🎖️</span> & Certificate <span className="certificate-emoji">📜</span> Included
+      </p>
+
+      {/* Sparkles */}
+      <div className="card-visuals">
+        {sparks.map((_, i) => (
+          <div key={i} className="spark-gfg"></div>
+        ))}
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
     </section>
   );
 };

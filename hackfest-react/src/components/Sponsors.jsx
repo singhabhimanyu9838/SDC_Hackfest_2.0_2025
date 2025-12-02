@@ -5,20 +5,25 @@ import { FaLinkedin } from "react-icons/fa";
 const Sponsors = () => {
   // ⭐ MAIN SPONSORS
   const row1 = [
+    {
+      img: "/assets/img/sponsors/gfg-gg-logo.svg",
+      url: "https://www.geeksforgeeks.org/",
+    },
     { img: "/assets/img/sponsors/spon2.jpg", url: "https://www.matiks.in/" },
     { img: "/assets/img/sponsors/spon3.jpg", url: "https://bilvaleaf.com/" },
-     {
-      img: "/assets/img/sponsors/spon4.jpg",
-      url: "https://www.namespace.world/",
-    },
-    {
-      img: "/assets/img/sponsors/secondb.jpg",
-      url: "https://www.secondbrainapp.in/",
-    },
     
   ];
 
   const row2 = [
+     
+      {
+      img: "/assets/img/sponsors/spon4.jpg",
+      url: "https://www.namespace.world/",
+    }
+    ,{
+      img: "/assets/img/sponsors/secondbb.jpg",
+      url: "https://www.secondbrainapp.in/",
+    },
     
   ];
 
@@ -38,57 +43,57 @@ const Sponsors = () => {
   ];
 
   // ⭐ ALUMNI SPONSORS (8 Members → 4 + 4)
-  const alumniSponsors = [
-    {
-      name: "Ayush Gupta",
-      role: "Alumni Sponsor",
-      img: "/assets/img/sponsors/ayush.jpg",
-      linkedin: "https://www.linkedin.com/in/ayush-gupta-5a8058227/",
-    },
-    {
-      name: "Piyush Sahu",
-      role: "Alumni Sponsor",
-      img: "/assets/img/sponsors/piyush.jpg",
-      linkedin: "https://www.linkedin.com/in/piyush-sahu-546382227/",
-    },
-    {
-      name: "Himanshu Sahu",
-      role: "Alumni Sponsor",
-      img: "/assets/img/sponsors/himanshu.jpg",
-      linkedin: "https://www.linkedin.com/in/himanshu-sahu75/overlay/photo",
-    },
-    {
-      name: "Manas Verma",
-      role: "Alumni Sponsor",
-      img: "/assets/img/sponsors/manas.jpg",
-      linkedin: "https://www.linkedin.com/in/manas-verma-0000ba227/",
-    },
+  // const alumniSponsors = [
+  //   {
+  //     name: "Ayush Gupta",
+  //     role: "Alumni Sponsor",
+  //     img: "/assets/img/sponsors/ayush.jpg",
+  //     linkedin: "https://www.linkedin.com/in/ayush-gupta-5a8058227/",
+  //   },
+  //   {
+  //     name: "Piyush Sahu",
+  //     role: "Alumni Sponsor",
+  //     img: "/assets/img/sponsors/piyush.jpg",
+  //     linkedin: "https://www.linkedin.com/in/piyush-sahu-546382227/",
+  //   },
+  //   {
+  //     name: "Himanshu Sahu",
+  //     role: "Alumni Sponsor",
+  //     img: "/assets/img/sponsors/himanshu.jpg",
+  //     linkedin: "https://www.linkedin.com/in/himanshu-sahu75/overlay/photo",
+  //   },
+  //   {
+  //     name: "Manas Verma",
+  //     role: "Alumni Sponsor",
+  //     img: "/assets/img/sponsors/manas.jpg",
+  //     linkedin: "https://www.linkedin.com/in/manas-verma-0000ba227/",
+  //   },
 
-    {
-      name: "Akansha Pal",
-      role: "Alumni Sponsor",
-      img: "/assets/img/sponsors/akansha.jpg",
-      linkedin: "https://www.linkedin.com/in/akanksha-pal-0380a7227/",
-    },
-    {
-      name: "Arpan Bhadoria",
-      role: "Alumni Sponsor",
-      img: "/assets/img/sponsors/arpan.jpg",
-      linkedin: "https://www.linkedin.com/in/arpan-singh-bhadauria-271b55207/",
-    },
-    {
-      name: "Shekhar Mishra",
-      role: "Alumni Sponsor",
-      img: "/assets/img/sponsors/shekhar.jpg",
-      linkedin: "https://www.linkedin.com/in/shekharmishraa/",
-    },
-    {
-      name: "Abhinay Yadav",
-      role: "Alumni Sponsor",
-      img: "/assets/img/sponsors/abhinav.png",
-      linkedin: "https://www.linkedin.com/in/abhinay01/",
-    },
-  ];
+  //   {
+  //     name: "Akansha Pal",
+  //     role: "Alumni Sponsor",
+  //     img: "/assets/img/sponsors/akansha.jpg",
+  //     linkedin: "https://www.linkedin.com/in/akanksha-pal-0380a7227/",
+  //   },
+  //   {
+  //     name: "Arpan Bhadoria",
+  //     role: "Alumni Sponsor",
+  //     img: "/assets/img/sponsors/arpan.jpg",
+  //     linkedin: "https://www.linkedin.com/in/arpan-singh-bhadauria-271b55207/",
+  //   },
+  //   {
+  //     name: "Shekhar Mishra",
+  //     role: "Alumni Sponsor",
+  //     img: "/assets/img/sponsors/shekhar.jpg",
+  //     linkedin: "https://www.linkedin.com/in/shekharmishraa/",
+  //   },
+  //   {
+  //     name: "Abhinay Yadav",
+  //     role: "Alumni Sponsor",
+  //     img: "/assets/img/sponsors/abhinav.png",
+  //     linkedin: "https://www.linkedin.com/in/abhinay01/",
+  //   },
+  // ];
 
   return (
     <section className="pt100 pb100" id="sponsors">
@@ -207,20 +212,7 @@ const Sponsors = () => {
 
         <div className="collab-grid" data-aos="fade-up">
           {/* IEEE Card */}
-          <a
-            href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A91151705&keywords=ieee%20student%20branch%20rec%20banda&origin=RICH_QUERY_SUGGESTION&position=0&searchId=c328b8ee-fa4d-446d-a2a2-c5646133f22f&sid=_tM&spellCorrectionEnabled=false" 
-            target="_blank"
-            rel="noreferrer"
-            className="collab-link-wrapper"
-          >
-            <div className="collab-card sponsor-style">
-              <img
-                src="/assets/img/sponsors/ieee.png"
-                alt="IEEE"
-                className="collab-img"
-              />
-            </div>
-          </a>
+          
 
           {/* Incubation Center Card */}
           <a
@@ -240,6 +232,21 @@ const Sponsors = () => {
                 <h2>Incubation Center</h2>
           
               </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A91151705&keywords=ieee%20student%20branch%20rec%20banda&origin=RICH_QUERY_SUGGESTION&position=0&searchId=c328b8ee-fa4d-446d-a2a2-c5646133f22f&sid=_tM&spellCorrectionEnabled=false" 
+            target="_blank"
+            rel="noreferrer"
+            className="collab-link-wrapper"
+          >
+            <div className="collab-card sponsor-style">
+              <img
+                src="/assets/img/sponsors/ieee.png"
+                alt="IEEE"
+                className="collab-img"
+              />
             </div>
           </a>
         </div>

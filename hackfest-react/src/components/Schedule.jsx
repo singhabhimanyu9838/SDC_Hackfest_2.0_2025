@@ -10,7 +10,7 @@ const Schedule = () => {
         </div>
       </div>
       <img
-        src="/assets/img/new_assets/Schedule mobile.svg"
+        src="/assets/img/new_assets/Schedule-01.svg"
         alt="schedule"
         className="schedule"
       />

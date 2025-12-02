@@ -279,158 +279,100 @@
 /* ===================================================
       CODEATHON (Blue Neon Theme)
 =================================================== */
-/* Codeathon Glitch Title */
 /* ==========================================================
-   CODEATHON — MASTER ROW (3 cards in 1 row)
-   ========================================================== */
+   GFG SINGLE CARD LAYOUT
+========================================================== */
 
 .codeathon-row {
   max-width: 1100px;
   margin: 40px auto 0;
   display: flex;
   justify-content: center;
-  gap: 26px;
   flex-wrap: wrap;
 }
 
-
-/* ==========================================================
-   CODEATHON CARD BASE (blue cyber theme)
-   ========================================================== */
-
-.codeathon-card {
+/* GFG Prize Card */
+.codeathon-card.gfg-card {
   position: relative;
-  width: 305px;
-  height: 300px;
-  padding: 26px 20px;
+  width: 980px;
+  padding: 28px 22px;
   border-radius: 18px;
-  background: rgba(10, 15, 25, 0.65);
-  border: 1px solid rgba(120, 220, 255, 0.18);
+
+  background: rgba(5, 25, 10, 0.85);
+  border: 1px solid rgba(0, 255, 100, 0.22);
+  box-shadow: 0 12px 28px rgba(0,255,120,0.25),
+              inset 0 0 12px rgba(0,255,120,0.25);
+
   backdrop-filter: blur(12px);
   overflow: hidden;
   text-align: center;
-
-  box-shadow:
-    0 10px 30px rgba(0, 120, 255, 0.35),
-    inset 0 0 12px rgba(0, 180, 255, 0.35);
-
   transition: 0.3s ease-in-out;
 }
+
+.codeathon-card.gfg-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 45px rgba(0,255,120,0.45);
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-  .codeathon-card {
-    width: 92%;   /* mobile width */
-    height: 310px;
+  .codeathon-card.gfg-card {
+    width: 92%;
   }
 }
 
-/* Hover glow */
-.codeathon-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow:
-    0 15px 40px rgba(0, 180, 255, 0.55),
-    inset 0 0 18px rgba(0, 200, 255, 0.45);
-}
-
-
 /* ==========================================================
-   CODEATHON BLUE SPOTLIGHT
-   ========================================================== */
+   GFG SPOTLIGHT (Top Glow)
+========================================================== */
 
-.spotlight-blue1,
-.spotlight-blue2,
-.spotlight-blue3 {
+.spotlight-gfg {
   position: absolute;
-  top: -130px;
+  top: -140px;
   left: 50%;
-  width: 200%;
-  height: 270px;
+  width: 220%;
+  height: 300px;
 
   transform: translateX(-50%);
   background: radial-gradient(
-    ellipse at center,
-    rgba(0, 200, 255, 0.95) 0%,
-    rgba(0, 150, 255, 0.4) 30%,
-    rgba(0, 100, 200, 0.15) 60%,
-    transparent 100%
+    circle,
+    rgba(0,255,100,0.95),
+    rgba(0,180,80,0.5),
+    rgba(0,100,40,0.2),
+    transparent
   );
 
-  filter: blur(35px);
+  filter: blur(38px);
   z-index: 0;
   animation: spotlightPulse 2.5s infinite ease-in-out;
 }
 
+@keyframes spotlightPulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
 
 /* ==========================================================
-   BLUE OUTER RINGS
-   ========================================================== */
+   GFG OUTER RING ANIMATION
+========================================================== */
 
-.blue-ring1,
-.blue-ring2,
-.blue-ring3 {
+.gfg-ring {
   position: absolute;
-  inset: -38px;
+  inset: -40px;
   border-radius: 50%;
-  border: 3px solid rgba(0, 195, 255, 0.5);
+  border: 3px solid rgba(0,255,120,0.45);
   animation: ringSpin 6s linear infinite;
   z-index: 0;
 }
 
+@keyframes ringSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 
 /* ==========================================================
-   CODEATHON TEXT STYLE
-   ========================================================== */
-
-.code-blue {
-  color: #8ee8ff;
-  text-shadow: 0 0 8px #00c6ff;
-}
-
-.code-blue-text {
-  color: rgba(180, 240, 255, 0.8);
-}
-
-.metallic.blue1,
-.metallic.blue2,
-.metallic.blue3 {
-  background-image: linear-gradient(
-    90deg,
-    #8ee8ff,
-    #64d4ff,
-    #30b4ff,
-    #aef3ff
-  );
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: metallicShift 3s linear infinite;
-}
-
-
-/* ==========================================================
-   BLUE SPARKLES (BOTTOM TO TOP)
-   ========================================================== */
-
-.spark-blue {
-  position: absolute;
-  bottom: 0;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #aef8ff, transparent);
-  opacity: 0;
-  animation: sparkleRiseBlue 3s linear infinite;
-}
-
-@keyframes sparkleRiseBlue {
-  0% { opacity: 0; transform: translateY(0) scale(.4); }
-  20% { opacity: .9; transform: translateY(-20px) scale(1); }
-  60% { opacity: .5; transform: translateY(-70px) scale(.8); }
-  100% { opacity: 0; transform: translateY(-140px) scale(.4); }
-}
-
-
-/* ==========================================================
-   FLOATING CODE ICONS
-   ========================================================== */
+   FLOATING ICONS
+========================================================== */
 
 .floating-icons {
   position: absolute;
@@ -438,18 +380,121 @@
   right: 10px;
   display: flex;
   gap: 10px;
-  opacity: 0.15;
+  opacity: 0.18;
+  z-index: 2;
 }
 
 .float-icon {
   font-size: 34px;
+  color: #00ff99;
   animation: floatIcon 4s infinite ease-in-out;
 }
 
+@keyframes floatIcon {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
 
 /* ==========================================================
-   PIXEL RAIN (MATRIX-STYLE)
-   ========================================================== */
+   GFG GOODIES IMAGE
+========================================================== */
+
+.gfg-img-box {
+  margin-top: 10px;
+}
+.gfg-goodies-img {
+  width: 170px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 14px rgba(0,255,120,0.6));
+  transition: 0.3s ease;
+}
+.codeathon-card:hover .gfg-goodies-img {
+  transform: scale(1.05);
+}
+
+/* ==========================================================
+   TEXT STYLING
+========================================================== */
+
+.gfg-title {
+  color: #00ff88;
+  font-size: 26px;
+  font-weight: 800;
+  margin-top: 12px;
+  line-height: 25px;
+  text-shadow: 0 0 10px rgba(0,255,120,0.6);
+}
+
+.gfg-main-reward {
+  color: #b9ffd4;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+
+.gfg-coupon {
+  background: rgba(0,255,120,0.1);
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px dashed rgba(0,255,120,0.4);
+  font-size: 15px;
+  color: #dbffe9;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(0,255,140,0.35);
+}
+
+/* ==========================================================
+   EXTRA LINE (Medal + Certificate)
+========================================================== */
+
+.extra-line {
+  margin-top: 4px;
+  font-size: 14px;
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.15),
+    rgba(255,255,255,1),
+    rgba(255,255,255,0.15)
+  );
+
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 3s infinite linear;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+/* ==========================================================
+   GFG SPARKS (Glow particles)
+========================================================== */
+
+.spark-gfg {
+  position: absolute;
+  bottom: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #8dffbd, transparent);
+  opacity: 0;
+  animation: sparkleRiseGFG 3s linear infinite;
+}
+
+@keyframes sparkleRiseGFG {
+  0% { opacity: 0; transform: translateY(0) scale(.4); }
+  20% { opacity: .9; transform: translateY(-20px) scale(1); }
+  60% { opacity: .5; transform: translateY(-70px) scale(.8); }
+  100% { opacity: 0; transform: translateY(-140px) scale(.4); }
+}
+
+/* ==========================================================
+   PIXEL RAIN — CONVERTED TO GREEN
+========================================================== */
 
 .pixel-rain {
   position: absolute;
@@ -463,7 +508,7 @@
   position: absolute;
   width: 6px;
   height: 14px;
-  background: linear-gradient(#6affff, transparent);
+  background: linear-gradient(#00ff99, transparent);
   opacity: 0.7;
   animation: pixelFall 1.3s linear infinite;
   border-radius: 2px;
@@ -475,8 +520,7 @@
   100% { transform: translateY(260px); opacity: 0; }
 }
 
-
-/* auto random positions — 35 drops recommended */
+/* random positions */
 .pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
 .pixel-drop:nth-child(2) { left: 10%; animation-delay: .3s; }
 .pixel-drop:nth-child(3) { left: 15%; animation-delay: .6s; }
@@ -484,69 +528,167 @@
 .pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
 .pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
 .pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }
-.pixel-drop:nth-child(8) { left: 5%; animation-delay: .1s; }
-.pixel-drop:nth-child(9) { left: 10%; animation-delay: .3s; }
-.pixel-drop:nth-child(10) { left: 15%; animation-delay: .6s; }
-.pixel-drop:nth-child(11) { left: 22%; animation-delay: .9s; }
-.pixel-drop:nth-child(12) { left: 30%; animation-delay: .2s; }
-.pixel-drop:nth-child(13) { left: 40%; animation-delay: .4s; }
-.pixel-drop:nth-child(14) { left: 48%; animation-delay: .7s; }.pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
-.pixel-drop:nth-child(15) { left: 10%; animation-delay: .3s; }
-.pixel-drop:nth-child(16) { left: 15%; animation-delay: .6s; }
-.pixel-drop:nth-child(4) { left: 22%; animation-delay: .9s; }
-.pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
-.pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
-.pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }.pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
-.pixel-drop:nth-child(2) { left: 10%; animation-delay: .3s; }
-.pixel-drop:nth-child(3) { left: 15%; animation-delay: .6s; }
-.pixel-drop:nth-child(4) { left: 22%; animation-delay: .9s; }
-.pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
-.pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
-.pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }.pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
-.pixel-drop:nth-child(2) { left: 10%; animation-delay: .3s; }
-.pixel-drop:nth-child(3) { left: 15%; animation-delay: .6s; }
-.pixel-drop:nth-child(4) { left: 22%; animation-delay: .9s; }
-.pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
-.pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
-.pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }.pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
-.pixel-drop:nth-child(2) { left: 10%; animation-delay: .3s; }
-.pixel-drop:nth-child(3) { left: 15%; animation-delay: .6s; }
-.pixel-drop:nth-child(4) { left: 22%; animation-delay: .9s; }
-.pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
-.pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
-.pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }.pixel-drop:nth-child(1) { left: 5%; animation-delay: .1s; }
-.pixel-drop:nth-child(2) { left: 10%; animation-delay: .3s; }
-.pixel-drop:nth-child(3) { left: 15%; animation-delay: .6s; }
-.pixel-drop:nth-child(4) { left: 22%; animation-delay: .9s; }
-.pixel-drop:nth-child(5) { left: 30%; animation-delay: .2s; }
-.pixel-drop:nth-child(6) { left: 40%; animation-delay: .4s; }
-.pixel-drop:nth-child(7) { left: 48%; animation-delay: .7s; }
-/* continue same until 35 */
+.pixel-drop:nth-child(8) { left: 50%; animation-delay: .1s; }
+.pixel-drop:nth-child(10) { left: 53%; animation-delay: .3s; }
+.pixel-drop:nth-child(11) { left: 55%; animation-delay: .6s; }
+.pixel-drop:nth-child(12) { left: 58%; animation-delay: .9s; }
+.pixel-drop:nth-child(13) { left: 63%; animation-delay: .2s; }
+.pixel-drop:nth-child(14) { left: 66%; animation-delay: .4s; }
+.pixel-drop:nth-child(15) { left: 69%; animation-delay: .7s; }
+.pixel-drop:nth-child(16) { left: 70%; animation-delay: .1s; }
+.pixel-drop:nth-child(17) { left: 72%; animation-delay: .3s; }
+.pixel-drop:nth-child(18) { left: 75%; animation-delay: .6s; }
+.pixel-drop:nth-child(19) { left: 77%; animation-delay: .9s; }
+.pixel-drop:nth-child(20) { left: 80%; animation-delay: .2s; }
+.pixel-drop:nth-child(21) { left: 82%; animation-delay: .4s; }
+.pixel-drop:nth-child(22) { left: 85%; animation-delay: .7s; }
+.pixel-drop:nth-child(23) { left: 87%; animation-delay: .1s; }
+.pixel-drop:nth-child(24) { left: 88%; animation-delay: .3s; }
+.pixel-drop:nth-child(25) { left: 89%; animation-delay: .6s; }
+.pixel-drop:nth-child(26) { left: 90%; animation-delay: .9s; }
+.pixel-drop:nth-child(27) { left: 91%; animation-delay: .2s; }
+.pixel-drop:nth-child(28) { left: 92%; animation-delay: .4s; }
+.pixel-drop:nth-child(29) { left: 93%; animation-delay: .7s; }
+.pixel-drop:nth-child(30) { left: 94%; animation-delay: .1s; }
+.pixel-drop:nth-child(31) { left: 95%; animation-delay: .3s; }
+.pixel-drop:nth-child(32) { left: 96%; animation-delay: .6s; }
+.pixel-drop:nth-child(33) { left: 97%; animation-delay: .9s; }
+.pixel-drop:nth-child(34) { left: 98%; animation-delay: .2s; }
+.pixel-drop:nth-child(35) { left: 99%; animation-delay: .4s; }
 
-.extra-line {
-  margin-top: 4px;
-  font-size: 14px;
-  position: relative;
-  display: inline-block;
-  color: #ffe8a6;
-  background: linear-gradient(
-      90deg,
-      rgba(255,255,255,0.2) 0%,
-      rgba(255,255,255,0.9) 50%,
-      rgba(255,255,255,0.2) 100%
-  );
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: shimmer 3s infinite linear;
-}
+/* continue until your 35 drops */
 
-@keyframes shimmer {
-  0% { background-position: -200px 0; }
-  100% { background-position: 200px 0; }
-}
-.reward-icons {
-  margin-top: 6px;
+
+/* Container */
+.gfg-img-box {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  gap: 18px;
 }
+
+
+/* ======================================================
+   GFG GOODIES IMAGE (Bag + T-shirt)
+   With neon border + shine animation
+====================================================== */
+.gfg-goodies-img {
+  width: 150px;
+  object-fit: contain;
+
+  /* Neon Green GFG Border */
+  border: 2px solid rgba(0, 255, 120, 0.6);
+  border-radius: 14px;
+
+  padding: 6px;
+  background: rgba(0, 30, 15, 0.35);
+
+  /* Glow */
+  box-shadow:
+    0 0 10px rgba(0, 255, 120, 0.4),
+    0 0 20px rgba(0, 255, 120, 0.25),
+    inset 0 0 10px rgba(0, 255, 120, 0.2);
+
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+
+/* ======================================================
+   SHINE ANIMATION (Diagonally moving light streak)
+====================================================== */
+.gfg-goodies-img::before {
+  content: "";
+  position: absolute;
+  top: -150%;
+  left: -50%;
+  width: 250%;
+  height: 300%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* Trigger shine on hover of the whole card */
+.codeathon-card:hover .gfg-goodies-img::before {
+  opacity: 1;
+  animation: gfgShine 1.15s ease-out;
+}
+
+@keyframes gfgShine {
+  0%   { transform: translateX(-100%) rotate(25deg); }
+  100% { transform: translateX(100%) rotate(25deg); }
+}
+
+
+/* Slight zoom effect */
+.codeathon-card:hover .gfg-goodies-img {
+  transform: scale(1.06);
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+@media (max-width: 600px) {
+  .gfg-img-box {
+    gap: 12px;
+  }
+
+  .gfg-goodies-img {
+    width: 120px;
+  }
+}
+
+
+/* Hover zoom */
+.codeathon-card:hover .gfg-goodies-img {
+  transform: scale(1.05);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .gfg-img-box {
+    gap: 12px;
+  }
+  
+  .gfg-goodies-img {
+    width: 120px;
+  }
+}
+
+
+
+
+
+
+.gfg-ribbon {
+  background: linear-gradient(90deg, #0f9d58, #16c172, #0f9d58);
+  padding: 6px 16px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+
+  box-shadow: 0 0 15px rgba(0, 255, 120, 0.5);
+  animation: ribbonGlow 2.5s infinite alternate;
+}
+
+@keyframes ribbonGlow {
+  0% { box-shadow: 0 0 10px rgba(0,255,120,0.25); }
+  100% { box-shadow: 0 0 18px rgba(0,255,120,0.55); }
+}
+
+
+

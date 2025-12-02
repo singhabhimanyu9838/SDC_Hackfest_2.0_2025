@@ -9,7 +9,7 @@
 }
 
 .tagline-typewriter {
-  font-size: 34px;
+  font-size: 26px;
   font-weight: 800;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -63,7 +63,7 @@
 /* Mobile Fix */
 @media (max-width: 576px) {
   .tagline-typewriter {
-    font-size: 26px;
+    font-size: 24px;
     max-width: 90%;
   }
 }
@@ -122,4 +122,13 @@
   .banner-video-overlay{
     height: 151px;
 }
+}
+
+
+@media (max-width: 400px) {
+  .tagline-typewriter {
+    font-size: 18px;
+    max-width: 400px;
+    width:98%;
+  }
 }

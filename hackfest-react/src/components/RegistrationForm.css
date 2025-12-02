@@ -1,96 +1,162 @@
-/* ===== Ocean Storm – Registration Section ===== */
+/* =========================================================
+   🌊 OCEAN STORM BLUE THEME — REGISTRATION PAGE (FINAL)
+   ========================================================= */
 
+/* Page Wrapper */
 .storm-section {
   position: relative;
   min-height: 100vh;
-  padding: 120px 0;
+  padding: 150px 0 120px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background: radial-gradient(circle at top, #17253b 0, #05070d 45%, #000 100%);
   overflow: hidden;
 }
 
-/* Background animation */
+/* Floating particles */
 .storm-overlay {
   position: absolute;
-  inset: -30%;
-  background: radial-gradient(circle at 15% 20%, rgba(0, 255, 255, 0.15), transparent 55%),
-              radial-gradient(circle at 80% 0%, rgba(0, 150, 255, 0.2), transparent 55%),
-              radial-gradient(circle at 0% 100%, rgba(0, 150, 255, 0.25), transparent 55%);
-  animation: stormMove 18s linear infinite alternate;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(0,255,255,0.07), transparent 40%),
+    radial-gradient(circle at 80% 10%, rgba(0,150,255,0.07), transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(0,180,255,0.1), transparent 50%);
+  animation: drift 16s infinite alternate;
   pointer-events: none;
 }
 
-@keyframes stormMove {
-  0% { transform: translate(-40px, 0) scale(1.05); }
-  50% { transform: translate(40px, -30px) scale(1.1); }
-  100% { transform: translate(-20px, 20px) scale(1.03); }
+@keyframes drift {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-40px) scale(1.1); }
 }
 
-/* 70% of screen width */
+/* =========================================================
+   ⭐ GFG SPONSOR — BLUE THEME
+   ========================================================= */
+.gfg-sponsor-banner {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: -20px;
+}
+
+.gfg-sponsor-banner img {
+  width: 200px;
+  filter: drop-shadow(0 0 12px rgba(0,200,255,0.7));
+}
+
+.gfg-sponsor-text {
+  color: #d6f7ff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-shadow: 0 0 8px rgba(0,200,255,0.8);
+}
+
+/* =========================================================
+   ⭐ WHATSAPP GROUP BOX — BLUE HIGHLIGHT
+   ========================================================= */
+.gfg-whatsapp-box {
+  width: 70%;
+  margin: 0 auto 25px;
+  padding: 18px 22px;
+  text-align: center;
+  
+  background: rgba(0, 60, 100, 0.35);
+  border: 2px solid #29d2ff;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+
+  color: #dff7ff;
+  font-size: 1.15rem;
+  font-weight: 600;
+
+  box-shadow: 0 0 22px rgba(0, 200, 255, 0.45);
+  animation: bluePulse 2.4s infinite ease-in-out;
+}
+
+@keyframes bluePulse {
+  0% { box-shadow: 0 0 14px rgba(0, 200, 255, 0.4); }
+  50% { box-shadow: 0 0 28px rgba(0, 200, 255, 0.9); }
+  100% { box-shadow: 0 0 14px rgba(0, 200, 255, 0.4); }
+}
+
+.gfg-whatsapp-box a {
+  color: #7feaff;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.gfg-sponsor-banner img {
+  width: 230px;
+  filter: drop-shadow(0 0 12px rgba(0, 255, 150, 0.45));
+   backdrop-filter: blur(10px);
+}
+
+.gfg-required-msg {
+  text-align: center;
+  color: #ffdede;
+  margin-top: -6px;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(255,80,80,0.8);
+}
+
+/* =========================================================
+   FORM LAYOUT
+   ========================================================= */
+
 .reg-center {
   width: 50vw;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
 }
 
-/* Container */
-.storm-container {
-  width: 100%;
-  z-index: 2;
-}
-
-/* Title */
 .storm-title {
   color: #e9f7ff;
   font-size: 2.8rem;
   font-weight: 800;
-  text-shadow: 0 0 18px rgba(0, 255, 255, 0.45);
+  text-shadow: 0 0 18px rgba(0, 180, 255, 0.5);
 }
 
-.storm-title span{
+.storm-title span {
   color: red;
 }
 
 .storm-subtitle {
   color: #b8c7dd;
   font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .storm-subtitle span {
-  color: #48d1ff;
+  color: #1bbe47;
   font-weight: 700;
 }
 
 /* Card */
 .storm-card {
   width: 100%;
-  max-width: 100%;
   padding: 40px 35px;
   background: radial-gradient(circle at top, #182233 0, #05070d 60%, #000 100%);
   border: 1px solid rgba(72, 209, 255, 0.5);
   border-radius: 20px;
   box-shadow: 0 0 35px rgba(72, 209, 255, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(12px);
+  transition: 0.3s ease;
 }
 
 .storm-card:hover {
-  transform: translateY(-10px) scale(1.03);
+  transform: translateY(-10px) scale(1.02);
   box-shadow: 0 0 45px rgba(72, 209, 255, 0.7);
 }
 
-/* Header */
 .storm-card-header h4 {
   color: #fff;
   font-size: 1.9rem;
-  margin-bottom: 6px;
 }
 
 .storm-card-header p {
   color: #c6d7f2;
-  font-size: 1rem;
 }
 
 /* Inputs */
@@ -120,7 +186,7 @@
   box-shadow: 0 0 14px rgba(72, 209, 255, 0.8);
 }
 
-/* Message */
+/* Error message */
 .storm-message {
   padding: 12px;
   border-left: 4px solid #48d1ff;
@@ -129,7 +195,9 @@
   border-radius: 8px;
 }
 
-/* Submit Button */
+/* =========================================================
+   SUBMIT BUTTON — ORIGINAL BLUE GLOW
+   ========================================================= */
 .storm-btn {
   width: 100%;
   border: none;
@@ -146,6 +214,7 @@
   background: linear-gradient(135deg, #48d1ff, #00f5ff);
   box-shadow: 0 0 20px rgba(72, 209, 255, 0.8);
   color: #020308;
+  transition: 0.3s ease;
 }
 
 .storm-btn-inner:hover {
@@ -153,30 +222,18 @@
   box-shadow: 0 0 30px rgba(72, 209, 255, 0.9);
 }
 
-/* Bottom note */
+.storm-btn-inner:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Note */
 .storm-note {
   margin-top: 15px;
   text-align: center;
   color: #9fb3ce;
-  font-size: 1rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .reg-center {
-    width: 90vw;
-  }
-
-  .storm-title {
-    font-size: 2.2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .storm-title {
-    font-size: 1.8rem;
-  }
-}
 /* Back Button */
 .storm-back-btn {
   position: absolute;
@@ -189,15 +246,58 @@
   border: 1px solid rgba(73, 210, 255, 0.4);
   border-radius: 6px;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: 0.3s;
   z-index: 10;
-  backdrop-filter: blur(3px);
 }
 
 .storm-back-btn:hover {
   color: #00eaff;
   border-color: #00eaff;
   transform: translateX(-4px);
-  text-shadow: 0 0 8px #00eaff;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .reg-center { width: 90vw; }
+  .storm-title { font-size: 2.3rem; }
+}
+
+@media (max-width: 576px) {
+  .storm-title { font-size: 1.8rem; }
+}
+
+
+/* ================================
+    FULLSCREEN LOADER OVERLAY
+================================ */
+.storm-loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* ================================
+        LOADER ANIMATION
+================================ */
+.storm-loader {
+  width: 70px;
+  height: 70px;
+  border: 6px solid #09bfed; /* GFG green */
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: stormSpin 0.7s linear infinite;
+}
+
+@keyframes stormSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}

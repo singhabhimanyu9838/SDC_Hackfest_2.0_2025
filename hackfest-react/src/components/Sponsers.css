@@ -13,7 +13,12 @@
 /* Sponsors per row */
 .row-3 .sponsor-card {
   flex: 1 1 calc(33.33% - 22px);
-  max-width: 230px;
+  max-width: 320px;
+}
+
+.row-2 .sponsor-card{
+  flex: 2 2 calc(50% - 22px);
+  max-width: 350px;
 }
 
 /* =======================================
@@ -98,6 +103,11 @@
     max-width: 420px;
     width: 360px;
   }
+  .row-2 .sponsor-card {
+    flex: 1 1 100%;
+    max-width: 420px;
+    width: 360px;
+  }
 
   .sponsor-card {
     height: 150px;
@@ -111,6 +121,11 @@
 
 @media (max-width: 380px) {
   .row-3 .sponsor-card {
+    flex: 1 1 100%;
+    max-width: 420px;
+    width: 314px;
+  }
+  .row-2 .sponsor-card {
     flex: 1 1 100%;
     max-width: 420px;
     width: 314px;
@@ -241,7 +256,7 @@
    LOGO IMAGE (IEEE)
 ======================================= */
 .collab-img {
-  width: 80%;
+  width: 53%;
   height: auto;
   object-fit: contain;
   transition: 0.3s ease;
@@ -256,7 +271,7 @@
    RECB Image (for Incubation Center)
 ======================================= */
 .recb-img {
-  width: 70px;
+  width: 80px;
   height: auto;
   margin-bottom: 8px;
 }
@@ -276,7 +291,7 @@
 }
 
 .text-logo h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
