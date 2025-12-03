@@ -46,7 +46,7 @@ const Themes = () => {
 
                 {/* Problem Statement Card */}
                 <a
-                  href="/assets/docs/Problem_Statements.pdf"
+                  href="https://drive.google.com/file/d/1TWdt5kmCrtf3FJqr2f8ioRV04pmVkQwF/view?usp=drivesdk"
                   target="_blank"
                   rel="noreferrer"
                   className="theme-link-card"
