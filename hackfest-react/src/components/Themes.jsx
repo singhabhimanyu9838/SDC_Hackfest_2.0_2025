@@ -35,7 +35,7 @@ const Themes = () => {
               <div className="theme-links-row">
                 {/* Rulebook Card */}
                 <a
-                  href="https://drive.google.com/file/d/14oObEjgGIH6z39KLkuxZkb6LUvh0wYhL/view?usp=drivesdk"
+                  href="https://drive.google.com/file/d/1TF5hkDXON8ID2NJzYsJiH-cWwbqYQqpw/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   className="theme-link-card"
