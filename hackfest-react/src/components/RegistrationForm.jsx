@@ -194,7 +194,7 @@ const RegistrationForm = () => {
                 </select>
               </div>
 
-              <div className="gfg-whatsapp-box" data-aos="zoom-in">
+              {/* <div className="gfg-whatsapp-box" data-aos="zoom-in">
                 <span className="wa-title">
                   Join the Official Codeathon WhatsApp Group
                 </span>
@@ -208,12 +208,12 @@ const RegistrationForm = () => {
                   <i className="fa-brands fa-whatsapp"></i>
                   &nbsp; Join Now
                 </a>
-              </div>
+              </div> */}
 
-              <p className="gfg-required-msg">
+              {/* <p className="gfg-required-msg">
                 ⚠ Joining the WhatsApp group is <strong>COMPULSORY</strong> for
                 receiving event updates.
-              </p>
+              </p> */}
 
               {message && <div className="storm-message">{message}</div>}
 
