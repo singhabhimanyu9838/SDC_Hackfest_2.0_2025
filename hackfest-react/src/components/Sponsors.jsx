@@ -28,10 +28,25 @@ const Sponsors = () => {
   ];
 
   const collabClubs = [
+    // {
+    //   // name: "Tech Minds Club",
+
+    //   img: "/assets/img/sponsors/ieee.png",
+    //   url: "https://exampleclub1.com",
+    // },
+    {
+      name: "Incubation Center",
+      // desc: "Design • Dev • Community",
+      img: "/assets/img/sponsors/club2.png",
+      url: "https://exampleclub2.com",
+    },
+  ];
+
+  const organize = [
     {
       // name: "Tech Minds Club",
 
-      img: "/assets/img/sponsors/ieee.png",
+      img: "/assets/img/sponsors/SDC.jpg",
       url: "https://exampleclub1.com",
     },
     {
@@ -105,6 +120,36 @@ const Sponsors = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
           >
+            Title Sponsor
+          </h3>
+        </div>
+
+        <div className="collab-grid" data-aos="fade-up">
+          
+
+          <a
+            href="https://www.linkedin.com/company/virtual-labs-iit-kanpur/posts/?feedView=all" 
+            target="_blank"
+            rel="noreferrer"
+            className="collab-link-wrapper"
+          >
+            <div className="collab-card sponsor-style">
+              <img
+                src="/assets/img/sponsors/virtual.jpg"
+                alt="IEEE"
+                className="collab-img"
+              />
+            </div>
+          </a>
+        </div>
+
+
+        <div className="section_title">
+          <h3
+            className="title-dark"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             Our Sponsors
           </h3>
         </div>
@@ -143,52 +188,6 @@ const Sponsors = () => {
           ))}
         </div>
 
-        {/*       
-        <div className="section_title" style={{ marginTop: 60 }}>
-          <h3 className="title-dark" data-aos="fade-right">
-            Alumni Sponsors
-          </h3>
-        </div>
-
-      
-        <div className="alumni-grid">
-          {alumniSponsors.slice(0, 4).map((a, i) => (
-            <a
-              key={i}
-              href={a.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="alumni-card-link"
-            >
-              <div className="alumni-card">
-                <img src={a.img} alt={a.name} className="alumni-img" />
-                <h4>{a.name}</h4>
-                <p>{a.role}</p>
-                <FaLinkedin className="linkedin-icon" />
-              </div>
-            </a>
-          ))}
-        </div>
-
-       
-        <div className="alumni-grid-center">
-          {alumniSponsors.slice(4).map((a, i) => (
-            <a
-              key={i + 4}
-              href={a.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="alumni-card-link"
-            >
-              <div className="alumni-card">
-                <img src={a.img} alt={a.name} className="alumni-img" />
-                <h4>{a.name}</h4>
-                <p>{a.role}</p>
-                <FaLinkedin className="linkedin-icon" />
-              </div>
-            </a>
-          ))}
-        </div> */}
 
         {/* ⭐ BUTTON */}
         <div className="text-center custom-btn-wrapper">
@@ -202,19 +201,16 @@ const Sponsors = () => {
           </a>
         </div>
 
-        <div className="container">
+         <div className="container">
           <div className="section_title" style={{ marginTop: 60 }}>
             <h3 className="title-dark" data-aos="fade-right">
-              In Collaboration With
+              ORGANIZE BY
             </h3>
           </div>
         </div>
 
         <div className="collab-grid" data-aos="fade-up">
-          {/* IEEE Card */}
-          
-
-          {/* Incubation Center Card */}
+         
           <a
             href="https://www.linkedin.com/in/incubation-centre-rec-banda-16abab238/" 
             target="_blank"
@@ -236,6 +232,34 @@ const Sponsors = () => {
           </a>
 
           <a
+            href="https://www.linkedin.com/company/student-developer-club-rec-banda/posts/?feedView=all" 
+            target="_blank"
+            rel="noreferrer"
+            className="collab-link-wrapper"
+          >
+            <div className="collab-card sponsor-style">
+              <img
+                src="/assets/img/sponsors/SDC.jpg"
+                alt="IEEE"
+                className="collab-img"
+              />
+            </div>
+          </a>
+        </div>
+
+
+
+        <div className="container">
+          <div className="section_title" style={{ marginTop: 60 }}>
+            <h3 className="title-dark" data-aos="fade-right">
+              In Collaboration With
+            </h3>
+          </div>
+        </div>
+
+        <div className="collab-grid" data-aos="fade-up">
+
+          <a
             href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A91151705&keywords=ieee%20student%20branch%20rec%20banda&origin=RICH_QUERY_SUGGESTION&position=0&searchId=c328b8ee-fa4d-446d-a2a2-c5646133f22f&sid=_tM&spellCorrectionEnabled=false" 
             target="_blank"
             rel="noreferrer"
@@ -250,6 +274,33 @@ const Sponsors = () => {
             </div>
           </a>
         </div>
+
+
+          <div className="container">
+          <div className="section_title" style={{ marginTop: 60 }}>
+            <h3 className="title-dark" data-aos="fade-right">
+              Bilvaleaf Internship Drive for Students
+            </h3>
+          </div>
+        </div>
+
+        <div className="collab-grid internship" data-aos="fade-up">
+          <a
+            href="https://bilvaleaf.in/internship" 
+            target="_blank"
+            rel="noreferrer"
+            className="collab-link-wrapper"
+          >
+            <div className="collab-card sponsor-style">
+              <img
+                src="/assets/img/sponsors/bilvaInt.png"
+                alt="IEEE"
+                className="collab-img"
+              />
+            </div>
+          </a>
+        </div>
+
       </div>
     </section>
   );

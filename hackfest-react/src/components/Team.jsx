@@ -7,7 +7,7 @@ const crew = [
   {
     name: "Abhimanyu Singh",
     role: "SDC Website Manager",
-    img: "/assets/img/team/coordinators/Abhimanyu.PNG",
+    img: "/assets/img/team/coordinators/abhi.png",
     linkedin: "https://www.linkedin.com/in/abhimanyu-singh-95a55s/",
   },
   {
@@ -43,7 +43,7 @@ const crew = [
   {
     name: "Kshitij Rastogi",
     role: "UI/UX Lead",
-    img: "/assets/img/team/coordinators/kshitij.jpg",
+    img: "/assets/img/team/kshitij.jpg",
     linkedin: "https://www.linkedin.com/in/kshitij-rastogi-4648a6295/",
   },
 ];
