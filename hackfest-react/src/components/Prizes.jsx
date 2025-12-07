@@ -93,6 +93,103 @@ const Prizes = () => {
 
 
       {/* ============================================================
+     Beginner , Social hashtag , Video PRIZE SECTION
+============================================================ */}
+
+<div className="container">
+  <div className="section_title">
+    <h3 className="title-dark">Special Category Prizes</h3>
+  </div>
+
+  <div className="prize-row three-prize-row">
+
+    {/* ================= Beginner Prize ================= */}
+    <div className="prize-card beginner-prize reveal-card">
+  <div className="outer-ring bronze-ring"></div>
+
+  <h4 className="prize-title gold">🏆 Best Beginner Team</h4>
+
+  <div className="prize-amount metallic gold">₹3,000</div>
+
+  <p className="prize-tagline">Worth Reward</p>
+  <p className="prize-tagline first">(Exclusively for First Year)</p>
+
+  <p className="extra-line">
+    Certificate of Excellence <span className="certificate-emoji">📜</span> Medal<span className="medal-emoji">🎖️</span>  Included
+  </p>
+
+  <div className="card-visuals">
+    {sparks.map((_, i) => (
+      <div key={i} className="spark"></div>
+    ))}
+  </div>
+</div>
+
+
+    {/* ================= Social Hashtag Prize ================= */}
+    <div className="prize-card social-prize reveal-card">
+      <div className="outer-ring silver-ring"></div>
+
+     
+
+      <h4 className="prize-title silver">Social Media Champion</h4>
+      <div className="prize-amount metallic silver">Winner Mug </div>
+
+      <p className="prize-tagline silver-text">
+        Maximum Likes with Hashtags
+      </p>
+
+      <p className="extra-line">
+        Tag <strong>#Hackfest2.0#SDC</strong> & <strong>#Codeathon</strong> on Social Media
+      </p>
+
+      <p className="extra-line">
+        Cup <span className="medal-emoji">🏆</span> & Certificate <span className="certificate-emoji">📜</span>
+      </p>
+
+      <div className="card-visuals">
+        {sparks.map((_, i) => (
+          <div key={i} className="spark"></div>
+        ))}
+      </div>
+    </div>
+
+    {/* ================= Best Video Maker Prize ================= */}
+    <div className="prize-card video-prize reveal-card">
+      <div className="outer-ring gold-ring"></div>
+
+      
+
+      <h4 className="prize-title gold">Best Video Creator</h4>
+      <div className="prize-amount metallic gold">T-Shirt + Pen</div>
+
+      <p className="prize-tagline">
+        Best Event Coverage Video
+      </p>
+
+      <p className="extra-line">
+        Creative Video Maker Wins  Goodies 🎥
+      </p>
+
+      <p className="extra-line">
+        Certificate <span className="certificate-emoji">📜</span> Included
+      </p>
+
+      <div className="card-visuals">
+        {sparks.map((_, i) => (
+          <div key={i} className="spark"></div>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+      {/* ============================================================
                            CODEATHON SECTION
       ============================================================ */}
 

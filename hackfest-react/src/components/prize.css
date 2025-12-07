@@ -220,7 +220,8 @@
 
 .prize-tagline {
   color: #ddd;
-  font-size: 14px;
+  font-size: 19px;
+  font-weight: 600;
 }
 
 
@@ -449,6 +450,8 @@
 ========================================================== */
 
 .extra-line {
+  color: #facc15;   /* highlighted golden color */
+  font-weight: 600;
   margin-top: 4px;
   font-size: 14px;
   display: inline-block;
@@ -456,7 +459,7 @@
   background: linear-gradient(
     90deg,
     rgba(255,255,255,0.15),
-    rgba(255,255,255,1),
+    rgb(211, 221, 36),
     rgba(255,255,255,0.15)
   );
 
@@ -691,4 +694,166 @@
 }
 
 
+.three-prize-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: nowrap;   /* IMPORTANT: keeps them in one row */
+  margin-top: 60px;
+}
 
+/* Mobile responsive */
+@media (max-width: 900px) {
+  .three-prize-row {
+    flex-wrap: wrap;   /* Stack on mobile */
+  }
+
+  .three-prize-row .prize-card {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+/* .beginner-prize {
+  background: linear-gradient(135deg, #0f172a, #1e40af);
+  border: 1px solid #38bdf8;
+}
+
+.beginner-prize .prize-title,
+.beginner-prize .prize-amount {
+  color: #38bdf8;
+}
+
+.beginner-prize .outer-ring {
+  border-color: #38bdf8;
+} */
+
+
+.beginner-prize {
+  background: linear-gradient(135deg, #2a1a00, #8b5e00, #ffd700);
+  border: 1px solid #ffd700;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.35);
+}
+
+/* Golden Title */
+.beginner-prize .prize-title {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Golden Amount */
+.beginner-prize .prize-amount {
+  color: #ffd700;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+}
+
+/* Tagline */
+.beginner-prize .prize-tagline {
+  color: #fff3b0;
+  font-weight: 600;
+}
+
+/* Highlight Lines */
+.beginner-prize .extra-line {
+  /* background: linear-gradient(90deg, #ffd700, #ffb700, #ffd700); */
+  color: #111;
+}
+
+/* Outer Ring */
+.beginner-prize .outer-ring {
+  border-color: #ffd700;
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.8);
+}
+
+.social-prize {
+  background: linear-gradient(135deg, #2e026d, #7c3aed);
+  border: 1px solid #c084fc;
+}
+
+.social-prize .prize-title,
+.social-prize .prize-amount {
+  color: #c084fc;
+}
+
+.social-prize .outer-ring {
+  border-color: #c084fc;
+}
+/* .video-prize {
+  background: linear-gradient(135deg, #3b1d0f, #f59e0b);
+  border: 1px solid #fcd34d;
+}
+
+.video-prize .prize-title,
+.video-prize .prize-amount {
+  color: #fcd34d;
+}
+
+.video-prize .outer-ring {
+  border-color: #fcd34d;
+} */
+
+
+
+
+
+.video-prize {
+  background: linear-gradient(135deg, #1f2933, #7c2d12); /* dark red / orange */
+  border: 1px solid #fb923c;
+}
+
+.video-prize .prize-title,
+.video-prize .prize-amount {
+  color: #fb923c;
+}
+
+.video-prize .prize-tagline {
+  color: #fed7aa;
+}
+
+/* .video-prize .extra-line {
+  background: linear-gradient(90deg, #fb923c, #f97316, #fb923c);
+  color: #111;
+} */
+
+.video-prize .outer-ring {
+  border-color: #fb923c;
+}
+
+.three-prize-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* FIRST CARD → FULL WIDTH */
+.three-prize-row .prize-card:first-child {
+  grid-column: 1 / -1;   /* Full width */
+  width: 100%;
+  max-width: 100%;
+}
+
+/* SECOND ROW → TWO CARDS */
+.three-prize-row .prize-card:nth-child(2),
+.three-prize-row .prize-card:nth-child(3) {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .three-prize-row {
+    grid-template-columns: 1fr;
+  }
+
+  .three-prize-row .prize-card:first-child {
+    grid-column: auto;
+  }
+}
+.social-prize .extra-line {
+  /* background: linear-gradient(90deg, #ffd700, #ffb700, #ffd700); */
+  color: #111;
+}
+
+.video-prize .extra-line {
+  /* background: linear-gradient(90deg, #ffd700, #ffb700, #ffd700); */
+  color: #111;
+}
