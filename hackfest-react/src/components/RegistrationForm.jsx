@@ -23,43 +23,43 @@ const RegistrationForm = () => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setMessage("");
-    setLoading(true);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setMessage("");
+  //   setLoading(true);
 
-    try {
-      const res = await fetch(`${API_BASE_URL}/api/registrations`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+  //   try {
+  //     const res = await fetch(`${API_BASE_URL}/api/registrations`, {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify(form),
+  //     });
 
-      const data = await res.json();
+  //     const data = await res.json();
 
-      if (!res.ok) {
-        throw new Error(
-          data.message || "Registration failed due to server error."
-        );
-      }
+  //     if (!res.ok) {
+  //       throw new Error(
+  //         data.message || "Registration failed due to server error."
+  //       );
+  //     }
 
-      setForm({
-        name: "",
-        email: "",
-        phone: "",
-        college: "",
-        branch: "",
-        year: "",
-      });
+  //     setForm({
+  //       name: "",
+  //       email: "",
+  //       phone: "",
+  //       college: "",
+  //       branch: "",
+  //       year: "",
+  //     });
 
-      // Redirect to success page
-      window.location.href = "/success";
-    } catch (err) {
-      setMessage(`❌ Error: ${err.message || "Could not connect to server."}`);
-    } finally {
-      setLoading(false);
-    }
-  };
+  //     // Redirect to success page
+  //     window.location.href = "/success";
+  //   } catch (err) {
+  //     setMessage(`❌ Error: ${err.message || "Could not connect to server."}`);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   return (
     <section id="register" className="storm-section">
@@ -230,41 +230,43 @@ const RegistrationForm = () => {
           </div>
         </div> */}
         <div className="gfg-whatsapp-box" data-aos="zoom-in">
-                <span className="wa-title">
-                  Join the Official Codeathon WhatsApp Group
-                </span>
+          <span className="wa-title">
+            Join the Official Codeathon WhatsApp Group
+          </span>
 
-                <a
-                  href="https://chat.whatsapp.com/KT21RMGAb5r9y4M6B5nr3y"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="wa-join-now-btn"
-                >
-                  <i className="fa-brands fa-whatsapp"></i>
-                  &nbsp; Join Now
-                </a>
-              </div> 
+          <a
+            href="https://chat.whatsapp.com/KT21RMGAb5r9y4M6B5nr3y"
+            target="_blank"
+            rel="noreferrer"
+            className="wa-join-now-btn"
+          >
+            <i className="fa-brands fa-whatsapp"></i>
+            &nbsp; Join Now
+          </a>
+        </div>
 
-              <p className="gfg-required-msg">
-                ⚠ Joining the WhatsApp group is <strong>COMPULSORY</strong> for
-                receiving event updates.
-              </p> 
+        <p className="gfg-required-msg">
+          ⚠ Joining the WhatsApp group is <strong>COMPULSORY</strong> for
+          receiving event updates.
+        </p>
 
-              {message && <div className="storm-message">{message}</div>}
+        {message && <div className="storm-message">{message}</div>}
 
-              <a
-  href="https://your-link-here.com"
-  className={`gfg-btn ${loading ? "disabled-link" : ""}`}
-  onClick={(e) => loading && e.preventDefault()}
->
-  {loading ? "Wait Submitting..." : "Click for Codeathon"}
-</a>
+        <button
+          className="gfg-btn full-width"
+          onClick={() =>
+            window.open(
+              "https://practice.geeksforgeeks.org/contest/codeathon-hackfest-20",
+              "_blank"
+            )
+          }
+        >
+          Register Codeathon
+        </button>
 
-
-              <p className="storm-note">
-                You'll receive event details on your registered email.
-              </p>
-
+        <p className="storm-note">
+          You'll receive event details on your registered email.
+        </p>
       </div>
 
       {/* ===========================
