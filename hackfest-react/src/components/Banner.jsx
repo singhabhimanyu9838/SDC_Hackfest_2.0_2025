@@ -50,11 +50,10 @@ const Banner = () => {
               </button>
             </a>
 
-            <a href="https://practice.geeksforgeeks.org/contest/codeathon-hackfest-20" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               <button
                 className="button-discord banner-button-style"
-                // onClick={() => (window.location.href = "/register")}
-
+                onClick={() => (window.location.href = "/register")}
               >
                 <i className="fa-solid fa-code" />
                 &nbsp;Codeathon

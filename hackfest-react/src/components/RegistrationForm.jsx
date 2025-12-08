@@ -97,7 +97,7 @@ const RegistrationForm = () => {
           </p>
         </div>
 
-        <div
+        {/* <div
           className="reg-center"
           data-aos="zoom-in-up"
           data-aos-duration="800"
@@ -194,7 +194,7 @@ const RegistrationForm = () => {
                 </select>
               </div>
 
-              {/* <div className="gfg-whatsapp-box" data-aos="zoom-in">
+              <div className="gfg-whatsapp-box" data-aos="zoom-in">
                 <span className="wa-title">
                   Join the Official Codeathon WhatsApp Group
                 </span>
@@ -208,12 +208,12 @@ const RegistrationForm = () => {
                   <i className="fa-brands fa-whatsapp"></i>
                   &nbsp; Join Now
                 </a>
-              </div> */}
+              </div> 
 
-              {/* <p className="gfg-required-msg">
+              <p className="gfg-required-msg">
                 ⚠ Joining the WhatsApp group is <strong>COMPULSORY</strong> for
                 receiving event updates.
-              </p> */}
+              </p> 
 
               {message && <div className="storm-message">{message}</div>}
 
@@ -228,7 +228,43 @@ const RegistrationForm = () => {
               </p>
             </form>
           </div>
-        </div>
+        </div> */}
+        <div className="gfg-whatsapp-box" data-aos="zoom-in">
+                <span className="wa-title">
+                  Join the Official Codeathon WhatsApp Group
+                </span>
+
+                <a
+                  href="https://chat.whatsapp.com/KT21RMGAb5r9y4M6B5nr3y"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="wa-join-now-btn"
+                >
+                  <i className="fa-brands fa-whatsapp"></i>
+                  &nbsp; Join Now
+                </a>
+              </div> 
+
+              <p className="gfg-required-msg">
+                ⚠ Joining the WhatsApp group is <strong>COMPULSORY</strong> for
+                receiving event updates.
+              </p> 
+
+              {message && <div className="storm-message">{message}</div>}
+
+              <a
+  href="https://your-link-here.com"
+  className={`gfg-btn ${loading ? "disabled-link" : ""}`}
+  onClick={(e) => loading && e.preventDefault()}
+>
+  {loading ? "Wait Submitting..." : "Click for Codeathon"}
+</a>
+
+
+              <p className="storm-note">
+                You'll receive event details on your registered email.
+              </p>
+
       </div>
 
       {/* ===========================
