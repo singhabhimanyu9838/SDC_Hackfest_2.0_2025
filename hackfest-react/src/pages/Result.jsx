@@ -10,27 +10,30 @@ const Result = () => {
         <h1 className="result-title">🏴‍☠️ HackFest 2.0 Results</h1>
 
         <p className="result-tagline">
-          The battle has been fierce… the tides are rising…  
+          The battle has been fierce… the tides are rising…
           <br />
           {/* <span className="highlight">Results will be released after the competition rounds are completed.</span> */}
         </p>
 
-        <div className="result-coming-card pdf-viewer">
-  <h2>Qualified Teams</h2>
-  <iframe
-    src="public\assets\ROUND 1 RESULT.pdf"
-    title="Results PDF"
-    width="100%"
-    height="600px"
-    style={{ border: "none", borderRadius: "10px" }}
-  ></iframe>
+        <div className="results-image-section">
+   <h2 className="result-heading">🏆 Results</h2>
+
+  <div className="results-image-grid">
+    <div className="result-image-card">
+      <img src="\assets\result3.jpg" alt="Result Page 1" />
+    </div>
+
+    <div className="result-image-card">
+      <img src="\assets\result4.jpg" alt="Result Page 2" />
+    </div>
+  </div>
 </div>
 
 <p className="stay-tuned">
-  📌 The final leaderboard has been uploaded as a PDF above.
+  📌 The final leaderboard is displayed above.
 </p>
 
-        
+
         <button
           className="back-home-btn"
           onClick={() => (window.location.href = "/")}
