@@ -24,7 +24,7 @@ const Result = () => {
     </div>
 
     <div className="result-image-card">
-      <img src="\assets\result4.jpg" alt="Result Page 2" />
+      <img src="\assets\result5.jpg" alt="Result Page 2" />
     </div>
   </div>
 </div>
